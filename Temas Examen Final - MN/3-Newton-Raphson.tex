@@ -1,0 +1,118 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, July 12, 2022 18:24:21}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 09:41:59}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\begin{equation*}
+\text{\textit{M\'{e}todo de Newton-Raphson}} 
+\end{equation*}
+
+\begin{equation*}
+\mathbf{Definicion} 
+\end{equation*}
+
+\textit{Dada la sucesi\'{o}n} $\left\{ P_{n}\right\} $ \textit{que converge
+al punto} $p$ \textit{diremos que la misma tiene convergencia de orden} $%
+\alpha $ $(\alpha >0)$ \textit{si existe }$\beta $ $\in R^{+}$ \textit{tal
+que} $\lim_{n\rightarrow \infty }\frac{\left\vert P_{n+1}-P\right\vert }{%
+\left\vert P_{n}-P\right\vert ^{\alpha }}=\beta $
+
+\begin{equation*}
+\mathbf{Teorema} 
+\end{equation*}
+
+\textit{Sea} $g:R\rightarrow R$ \textit{de clase} $C^{\infty }$ \textit{y
+sea la sucesion} $\left\{ P_{n}\right\} $ \textit{dada por} $%
+P_{n}=g(P_{n-1}) $\textit{. Si} $p$ \textit{es un punto fijo de }$g$ \textit{%
+y} $g^{(k)}(p)=0$ \textit{para} $k=1,2,3,4,\cdot \cdot \cdot ,m-1$ \textit{y}
+$g^{(m)}(p)\neq 0 $, \textit{entonces la sucesi\'{o}n} $\left\{
+P_{n}\right\} $ \textit{converge a }$P$ \textit{con orden de convergencia }$m
+$ \textit{y constante asint\'{o}tica:}
+
+\begin{equation*}
+\beta =\frac{\left\vert g^{(m)}(p)\right\vert }{m!} 
+\end{equation*}
+
+\begin{equation*}
+\mathbf{Demostracion} 
+\end{equation*}
+
+\textit{Por un resultado anterior }$\lim_{n\rightarrow \infty }P_{n}=P$ 
+\textit{y }$g(P)$. \textit{Usando ahora el desarrollo de Taylor de }$g$ 
+\textit{al rededor de }$P$\textit{\ tenemos: }$g(x)=\dsum\limits_{k=0}^{m-1}%
+\frac{g^{(k)}(P)}{k!}(x-P)^{k}+R_{m-1}(x)=g(P)+\dsum\limits_{k=1}^{m-1}\frac{%
+g^{(k)}(P)}{k!}+\frac{g^{(m)}(\xi )}{m!}(x-P)^{m}=P+\frac{g^{(m)}(\xi )}{m!}%
+(x-P)^{m}$, \textit{de donde }$g(x-P)=\frac{g^{(m)}(\xi )}{m!}(x-P)^{m}$
+
+\textit{Valuando en }$x=P_{n}$ \textit{tenemos }$P_{n+1}-P=\frac{g^{(m)}(\xi
+)}{m!}(P_{n}-P)^{m}$ \textit{tomando valor absoluto se tiene }$\left\vert
+P_{n+1}-P\right\vert =\frac{g^{(m)}(\xi _{n})}{m!}\left\vert
+P_{n}-P\right\vert ^{m}$
+
+\textit{Equivalentemente }$\frac{\left\vert P_{n+1}-P\right\vert }{%
+\left\vert P_{n}-P\right\vert ^{m}}=\frac{g^{(m)}(\xi _{n})}{m!}\mathit{\ }$%
+\textit{tomando limite }$n\rightarrow \infty $ \textit{obtenemos que: }%
+\begin{equation*}
+\underset{n\rightarrow \infty }{\lim }\frac{\left\vert P_{n+1}-P\right\vert 
+}{\left\vert P_{n}-P\right\vert ^{m}}=\frac{g^{(m)}(\xi _{n})}{m!}
+\end{equation*}%
+\emph{Corolario: El metodo de Newton-Raphson tiene convergencia cuadr\'{a}%
+tica.}
+
+\textit{Demostraci\'{o}n: Sea }$g(x)=x-\frac{f(x)}{f^{\prime }(x)}$\bigskip\ 
+\textit{y tal que }$g(P)=P$, \textit{entonces }$f(P)=0$
+
+$\bullet $ \textit{Debemos ver que }$g^{\prime }(P)=0$ \textit{y }$g^{\prime
+\prime }(P)\neq 0.$
+
+$g^{\prime }(x)=1-\frac{\left[ f^{\prime }(x)\right] ^{2}-f(x)f^{\prime
+\prime }(x)}{\left[ f^{\prime }(x)\right] ^{2}}=\frac{f(x)f^{\prime \prime
+}(x)}{\left[ f^{\prime }(x)\right] ^{2}}\rightarrow g^{\prime }(P)=0$ 
+\textit{ya que }$f(P)=0$.
+
+$\bullet $ \textit{Ahora la derivada segunda:}
+
+$g^{\prime \prime }(x)=f^{\prime }(x)\frac{f^{\prime \prime }(x)}{\left[
+f^{\prime }(x)\right] ^{2}}+f(x)\left[ \frac{\partial f}{\partial x}(\frac{%
+f^{\prime \prime }(x)}{\left[ f^{\prime }(x)\right] ^{2}})\right] =g^{\prime
+\prime }(P)=\frac{f^{\prime \prime }(P)}{f^{\prime }(P)}\neq 0$. \textit{ya
+que }$P\mathit{\ }$\textit{no es ra\'{\i}z m\'{u}ltiple.}
+
+\end{document}

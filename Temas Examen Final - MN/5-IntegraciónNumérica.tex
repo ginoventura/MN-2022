@@ -1,0 +1,123 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wednesday, July 13, 2022 19:36:15}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 09:43:43}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\[
+\text{\emph{Intregraci\'{o}n Num\'{e}rica}\textit{\ }} 
+\]
+
+\textit{Sea }$f:\left[ a,b\right] \rightarrow R$\textit{\ continua y sea }$%
+P=\left\{ x_{1}/a=x_{0}<x_{1}<x_{2}<\cdots <x_{n}=b\right\} $\textit{\ una
+partici\'{o}n del intervalo }$\left[ a,b\right] $ \textit{tal que }$%
+x_{k}=x_{0}+kh$\textit{, donde }\fbox{$h=\frac{b-a}{n}$}.\textit{\
+Aproximaremos el valor de }$\int_{a}^{b}f(x)dx$ \textit{con }$%
+I(f)=\int_{a}^{b}L(x)dx$\textit{\ donde }\fbox{\textit{\ }$L$\textit{\ es el
+polinomio interpolante de Lagrange }} \textit{para el conjunto de puntos }$%
+S=\left\{ (x_{i},f(x_{i}))\right\} _{i=0}^{n}$. \textit{Por lo tanto }\fbox{$%
+L(x)=\sum\limits_{i=0}^{n}f(x_{i})L_{i}(x)$} , donde \fbox{$L_{i}(x)=\frac{%
+\prod\limits_{j\neq i}(x-x_{j})}{\prod\limits_{j\neq i}(x_{i}-x_{j})}$}
+
+\textit{Entonces, }$I_{n}(f)=\int_{a}^{b}L(x)dx=\int_{a}^{b}\left[
+\sum\limits_{i=0}^{n}f(x_{i})L_{i}(x)\right] dx=\sum%
+\limits_{i=0}^{n}f(x_{i})\int_{a}^{b}L_{i}(x)dx=\sum%
+\limits_{i=0}^{n}f(x_{i})c_{i}$,\textit{\ donde, }$c_{i}=%
+\int_{a}^{b}L_{i}(x)dx$.
+
+\textit{Miremos }$c_{i}$\textit{\ en detalle:}
+
+$c_{i}=\frac{1}{\prod\limits_{j\neq i}(x_{i}-x_{j})}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx=$
+
+$\frac{1}{\prod\limits_{j\neq i}(x_{0}+ih-x_{0}-jh)}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx=$
+
+$\frac{1}{\prod\limits_{j\neq i}(i-j)h}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx=$
+
+\fbox{$\frac{1}{h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx$}.\textit{\ }
+
+\textit{Hacemos ahora el cambio de variable }$x=x_{0}+th$\textit{, entonces }%
+$h=dt$\textit{\ y por lo tanto}
+
+$c_{i}=$\textit{\ }$\frac{1}{h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}%
+\left[ \prod\limits_{j\neq i}(x_{0}+th-x_{0}-jh)\right] h$ $dt=$
+
+$\frac{1}{h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}\left[
+\prod\limits_{j\neq i}(t-j)h\right] dt=$
+
+$\frac{h^{n+1}}{h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}\left[
+\prod\limits_{j\neq i}(t-j)h\right] dt=$
+
+\fbox{$\frac{h}{\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}\left[
+\prod\limits_{j\neq i}(t-j)h\right] dt$}
+
+\fbox{\emph{Ejemplo}}
+
+\fbox{$n=1$}
+
+$I(f)=c_{0}(f(x_{0}))+c_{1}(f(x_{1}))$\ \ $=$\ \fbox{$\frac{x_{1}-x_{0}}{2}%
+\left[ f(x_{0})+f(x_{1})\right] \rightarrow \frac{b-a}{2}=(f(a)+f(b))$}
+
+\fbox{$n=2$}
+
+\fbox{$I_{2}(f)=\frac{h}{3}\left[ f(x_{0})+4f(x_{0}+h)+f(x_{0}+2h)\right]
+\rightarrow $ \emph{Metodo de Simpson}}
+
+\[
+\text{\emph{Error en la intregraci\'{o}n Num\'{e}rica}} 
+\]
+
+\textit{Si }$R_{n}=I(f)-\dint_{a}^{b}f(x)$ $dx$, \textit{entonces }$R_{n}(f)$
+\textit{est\'{a} dado por:}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ $R_{n}(f)=%
+\begin{array}{c}
+\frac{R_{n}(x^{n+1})}{(n+1)!}f^{(n+1)}(\xi )\rightarrow \text{\textit{\ Si }}%
+n\text{\textit{\ es impar}} \\ 
+\frac{R_{n}(x^{n+2})}{(x+2)!}f^{(n+2)}(\xi )\rightarrow \text{ \textit{Si }}n%
+\text{\textit{\ es par}}%
+\end{array}%
+$ $\ \ \ \ \xi \in \left( a,b\right) $
+
+\fbox{\textit{Para }$n=1$}
+
+\fbox{$R_{1}(f)=\frac{h^{3}}{12}f^{\prime \prime }(\xi )$}
+
+\end{document}

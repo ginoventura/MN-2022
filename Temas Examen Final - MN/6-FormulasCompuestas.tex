@@ -1,0 +1,80 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Thursday, July 14, 2022 12:21:45}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 09:45:54}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\[
+\text{\emph{Formulas compuestas}}\mathit{\ } 
+\]
+
+\textit{Sea }$h=\frac{b-a}{m}$, \textit{entonces el intervalo }$\left[ a,b%
+\right] $\textit{\ queda subdividido en }$m$\textit{\ subintervalos de
+longitud }$h$\textit{\ y aplicanos el m\'{e}todo del trapecio a cada uno de
+estos subintervalos y sumamos.}
+
+\[
+\text{\emph{Formula del Trapecio compuesta}} 
+\]
+
+\fbox{$n=2\rightarrow $\textit{\ \emph{M\'{e}todo de Simpson} }$\frac{1}{3}$}
+
+\[
+I_{2}(f)=\frac{h}{3}[f(x_{0})+4f(x_{1})+f(x_{2})] 
+\]
+
+\fbox{$n=3\rightarrow $ \emph{M\'{e}todo de Simpson}\textit{\ }$\frac{3}{8}$}
+
+\[
+I_{3}(f)=\frac{3h}{8}\left[ f(x_{0})+3f(x_{1})+3f(x_{2})+f(x_{3})\right] 
+\]
+
+\fbox{$n=14\rightarrow $ \emph{(Por ejemplo, para n par)}}
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[ f(x_{0})+4\sum\limits_{j=0}^{\frac{n}{2}%
+-1}f(x_{2j+1})+2\sum\limits_{j=1}^{\frac{n}{2}-1}f(x_{2j})+f(x_{n})\right] 
+\]
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[
+f(x_{0})+4f(x_{1})+2f(x_{2})+4f(x_{3})+2f(x_{4})+4f(x_{5})+2f(x_{6})+4f(x_{7})+2f(x_{8})+4f(x_{9})+2f(x_{10})+4f(x_{11})+2f(x_{12})+4f(x_{13})+f(x_{14})%
+\right] 
+\]
+
+\end{document}

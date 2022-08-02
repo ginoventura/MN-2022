@@ -1,0 +1,327 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, June 13, 2022 20:17:50}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 19:58:13}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$f(x,y)=\frac{x-y}{1+y^{4}}$
+%$A=\left[ 
+%\begin{array}{ccc}
+%1 & 0 & 0 \\ 
+%1 & 0.33334 & 0,11115556 \\ 
+%1 & 0.50001 & 0.25 \\ 
+%1 & 0.66668 & 0.44 \\ 
+%1 & 0.83335 & 0.694 \\ 
+%1 & 1 & 1%
+%\end{array}%
+%\right] $
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\bigskip
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3- Sea la ecuacion diferencial de primer orden $y\prime =\frac{1-xy}{1+y^{4}}
+$ con la condicion inicial $y(0)=1.2$. 
+
+para \qquad $0\leq x\leq 6\qquad $y\qquad $y(0)=1.2$
+
+\begin{eqnarray*}
+\frac{b-a}{n} &=&h \\
+\frac{b-a}{h} &=&n
+\end{eqnarray*}
+
+$y^{\prime }=\frac{1-xy}{1+y^{4}}$
+
+$a=0$
+
+$b=6$
+
+$n=\frac{b-a}{h}$
+
+$h=\frac{1}{6}$
+
+Es la distancia entre los puntos.i es la posicion, multiplicar por el h
+
+$x_{i}=a+ih$
+
+$\bigskip x_{i}=0+i(\frac{1}{6})$
+
+\bigskip $f(x,y)=\frac{x-y}{1+y^{4}}$
+
+El primer yk, lo tenemos como dato y(1)(xk)=1(yk)
+
+$y_{k+1}=y_{k}+hf(x_{k},y_{k})$
+
+$y_{k+1}=1.2+\frac{1}{6}(f(0,1.2))=\allowbreak 1.\,\allowbreak 134\,9$
+
+$y_{k+1}=1.\,\allowbreak 134\,9+\frac{1}{6}(f(0.33334,1.\,\allowbreak
+134\,9))=\allowbreak 1.\,\allowbreak 084\,7$
+
+$y_{k+1}=1.\,\allowbreak 084\,7+\frac{1}{6}(f(0.50001,1.\,\allowbreak
+084\,7))=\allowbreak 1.\,\allowbreak 043\,8$
+
+$y_{k+1}=\allowbreak 1.\,\allowbreak 043\,8+\frac{1}{6}(f(0.66668,1.\,%
+\allowbreak 043\,8))=\allowbreak 1.\,\allowbreak 015\,1$
+
+$y_{k+1}=\allowbreak \allowbreak 1.\,\allowbreak 015\,1+\frac{1}{6}%
+(f(0.83335,\allowbreak 1.\,\allowbreak 015\,1))=\allowbreak 1.\,\allowbreak
+000\,4$
+
+$%
+\begin{array}{cc}
+x_{k} & y_{k} \\ 
+0 & 1.2 \\ 
+0.33334 & \allowbreak 1.\,\allowbreak 134\,9 \\ 
+0.50001 & \allowbreak 1.\,\allowbreak 084\,7 \\ 
+0.66668 & \allowbreak 1.\,\allowbreak 043\,8 \\ 
+0.83335 & 1.\,\allowbreak 015\,1 \\ 
+1 & \allowbreak \allowbreak 1.\,\allowbreak 000\,4%
+\end{array}%
+$
+
+Entonces:
+
+$S(x,y)=\{(0,1.2),(0.33334,1.1349),(0.50001,\allowbreak 1.\,\allowbreak
+084\,7),(0.66668,\allowbreak 1.\,\allowbreak
+043\,8),(0.83335,1.\,\allowbreak 015\,1),(1,\allowbreak \allowbreak
+1.\,\allowbreak 000\,4)\}$\FRAME{dtbpFX}{5.0488in}{3.3624in}{0pt}{}{}{Plot}{%
+\special{language "Scientific Word";type "MAPLEPLOT";width 5.0488in;height
+3.3624in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "-5";xmax "5";xviewmin "-0.0001";xviewmax
+"1.0001";yviewmin "1";yviewmax "1.20001996";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patchnogrid";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function
+\TEXUX{$\MATRIX{2,6}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,,,,,}\CELL{0}%
+\CELL{1.2}\CELL{0.33334}\CELL{\allowbreak 1.\,\allowbreak
+134\,9}\CELL{0.50001}\CELL{\allowbreak 1.\,\allowbreak
+084\,7}\CELL{0.66668}\CELL{\allowbreak 1.\,\allowbreak
+043\,8}\CELL{0.83335}\CELL{1.\,\allowbreak 015\,1}\CELL{1}\CELL{\allowbreak
+\allowbreak 1.\,\allowbreak 000\,4}$};linecolor "blue";linestyle 1;pointplot
+TRUE;pointstyle "point";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Point";rangeset"X";VCamFile
+'RDUNN307.xvz';valid_file "T";tempfilename
+'RDUNMY01.wmf';tempfile-properties "XPR";}}
+
+\bigskip
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejercicio 4) Usando el conjunto de puntos obtenido en el ejercicio 3.
+Aproxime la solucion de la ecuacion diferencial usando la familia de
+
+funciones $A$ del ejercicio 2. Grafique.
+
+\bigskip - Funciones del ejercicio 2:
+
+$A=\{1,x,x^{2}\}$
+
+$f_{1}(x)=1$
+
+$f_{2}(x)=x$
+
+$f_{3}(x)=x^{2}$
+
+- Conjunto de puntos del ejercicio 3:
+
+$S(x,y)=\{(0,1.2),(0.33334,1.1349),(0.50001,\allowbreak 1.\,\allowbreak
+084\,7),(0.66668,\allowbreak 1.\,\allowbreak
+043\,8),(0.83335,1.\,\allowbreak 015\,1),(1,\allowbreak \allowbreak
+1.\,\allowbreak 000\,4)\}$
+
+\bigskip
+
+- Forma que tiene que tener el polinomio resultante:
+
+\[
+f(x)=a_{0}+a_{1}x+a_{2}x^{2} 
+\]
+
+- Columna 1: Reemplazamos cada valor de x con A=\{1\}
+
+- Columna 2: Reemplazamos cada valor de x con A=\{x\}
+
+- Columna 3: Reemplazamos cada valor de x con A=\{x2\}
+
+1. Armamos la matriz A:
+
+$A=\left[ 
+\begin{array}{ccc}
+1 & 0 & 0 \\ 
+1 & 0.33334 & 0,11115556 \\ 
+1 & 0.50001 & 0.25 \\ 
+1 & 0.66668 & 0.44 \\ 
+1 & 0.83335 & 0.694 \\ 
+1 & 1 & 1%
+\end{array}%
+\right] $
+
+\bigskip 2. Armamos la matriz Y
+
+Columna: Valores de Y en S:
+
+$Y=\left[ 
+\begin{array}{c}
+1.2 \\ 
+1.1349 \\ 
+1.\,\allowbreak 084\,7 \\ 
+1.\,\allowbreak 043\,8 \\ 
+1.\,\allowbreak 015\,1 \\ 
+1.\,\allowbreak 000\,4%
+\end{array}%
+\right] $
+
+3. Calculamos la transpuesta de A:
+
+$A$, transpose: $\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \allowbreak $
+
+$A^{t}=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] $
+
+!!Cuidado con el orden de multiplicar
+
+4. Calculamos el producto de A(transpuesta) x A:
+
+$C=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \left[ 
+\begin{array}{ccc}
+1 & 1 & 1 \\ 
+1 & 1.2 & 1.44 \\ 
+1 & 1.4 & 1.96 \\ 
+1 & 1.6 & 2.56 \\ 
+1 & 1.8 & 3.24 \\ 
+1 & 2.0 & 4%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{ccc}
+6.0 & 9.0 & 14.\,\allowbreak 2 \\ 
+9.0 & 14.\,\allowbreak 2 & 23.\,\allowbreak 4 \\ 
+14.\,\allowbreak 2 & 23.\,\allowbreak 4 & 39.\,\allowbreak 966%
+\end{array}%
+\right] \allowbreak $
+
+\bigskip
+
+5. Calculamos el producto de A(transpuesta) x Y:
+
+$D=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+1 \\ 
+1 \\ 
+1.\,\allowbreak 016\,4 \\ 
+1.\,\allowbreak 041\,8 \\ 
+1.\,\allowbreak 071\,3 \\ 
+1.\,\allowbreak 102\,2%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] $
+
+\bigskip
+
+6. Multiplicamos C$^{-1}$ x D:
+
+\bigskip $R=\left[ 
+\begin{array}{ccc}
+6.0 & 9.0 & 14.\,\allowbreak 2 \\ 
+9.0 & 14.\,\allowbreak 2 & 23.\,\allowbreak 4 \\ 
+14.\,\allowbreak 2 & 23.\,\allowbreak 4 & 39.\,\allowbreak 966%
+\end{array}%
+\right] ^{-1}\left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+1.\,\allowbreak 075\,3 \\ 
+-0.170\,54 \\ 
+9.\,\allowbreak 258\,4\times 10^{-2}%
+\end{array}%
+\right] \allowbreak 
+\begin{array}{c}
+a0 \\ 
+a1 \\ 
+a2%
+\end{array}%
+$
+
+\bigskip 7. Reemplazamos R en la f(x) con los a sub n.
+
+$A=\{1,x,x^{2}\}$
+
+$f(x)=a_{0}+a_{1}x+a_{2}x^{2}$
+
+\[
+f(x)=1.0753-0.17054x+9.\,\allowbreak 258\,4\times 10^{-2}x^{2} 
+\]
+
+\end{document}

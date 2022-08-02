@@ -1,0 +1,499 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, July 26, 2022 11:13:04}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 19:48:28}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$f(x,y)=2x+\frac{2x}{e^{y-x^{1}}}$
+%$Y=\left[ 
+%\begin{array}{c}
+%0 \\ 
+%0.177\,71 \\ 
+%\allowbreak \allowbreak \allowbreak 0.537\,54 \\ 
+%1.\,\allowbreak 033 \\ 
+%1.\,\allowbreak 606\,5 \\ 
+%\allowbreak \allowbreak 2.\,\allowbreak 224\,6%
+%\end{array}%
+%\right] $
+%$T=\left[ 
+%\begin{array}{cccccc}
+%1 & 1 & 1 & 1 & 1 & 1 \\ 
+%1 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 \\ 
+%1 & 0.04 & 0.16 & 0.36 & 0.64 & 1%
+%\end{array}%
+%\right] $
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\bigskip $y^{\prime }=2x+\frac{2x}{e^{y-x^{1}}}$
+
+$y(0)=0$
+
+$h=0.2$
+
+$x_{i}=a+ih$
+
+$\bigskip x_{i}=i(0.2)$
+
+$f(x,y)=2x+\frac{2x}{e^{y-x^{1}}}$
+
+$y_{k+1}=y_{k}+hf(x_{k},y_{k})$
+
+$y_{k+1}=0+0.2(f(0,0))\allowbreak =\allowbreak 0.0$
+
+$y_{k+1}=0+0.2(f(0.2,0))=\allowbreak 0.177\,71$
+
+$y_{k+1}=0.177\,71+0.2(f(0.4,\allowbreak 0.177\,71))=\allowbreak 0.537\,54$
+
+$y_{k+1}=\allowbreak \allowbreak 0.537\,54+0.2(f(0.6,\allowbreak \allowbreak
+\allowbreak 0.537\,54))=\allowbreak 1.\,\allowbreak 033$
+
+$y_{k+1}=\allowbreak 1.\,\allowbreak 033+0.2(f(0.8,\allowbreak
+1.\,\allowbreak 033))=\allowbreak 1.\,\allowbreak 606\,5$
+
+$y_{k+1}=\allowbreak \allowbreak 1.\,\allowbreak 606\,5+0.2(f(1,\allowbreak
+\allowbreak \allowbreak 1.\,\allowbreak 606\,5))=\allowbreak 2.\,\allowbreak
+224\,6$
+
+\bigskip $%
+\begin{array}{cc}
+x_{k} & y_{k} \\ 
+0 & 0 \\ 
+0.2 & \allowbreak \allowbreak 0.177\,71 \\ 
+0.4 & \allowbreak \allowbreak \allowbreak 0.537\,54 \\ 
+0.6 & \allowbreak 1.\,\allowbreak 033 \\ 
+0.8 & \allowbreak 1.\,\allowbreak 606\,5\allowbreak  \\ 
+1 & \allowbreak \allowbreak 2.\,\allowbreak 224\,6%
+\end{array}%
+\left[ 
+\begin{array}{c}
+0 \\ 
+0.177\,71 \\ 
+\allowbreak \allowbreak \allowbreak 0.537\,54 \\ 
+1.\,\allowbreak 033 \\ 
+1.\,\allowbreak 606\,5 \\ 
+\allowbreak \allowbreak 2.\,\allowbreak 224\,6%
+\end{array}%
+\right] $\FRAME{dtbpFX}{4.4996in}{3in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "-5";xmax "5";xviewmin "-0.00010000010002";xviewmax
+"1.00010000010002";yviewmin "-0.846497079213021";yviewmax
+"2.22490707900002";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patchnogrid";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function
+\TEXUX{$\MATRIX{2,6}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,,,,,}\CELL{0}\CELL{0}%
+\CELL{0.2}\CELL{\allowbreak \allowbreak
+0.177\,71}\CELL{0.4}\CELL{\allowbreak \allowbreak \allowbreak
+0.537\,54}\CELL{0.6}\CELL{\allowbreak 1.\,\allowbreak
+033}\CELL{0.8}\CELL{\allowbreak 1.\,\allowbreak 606\,5\allowbreak
+}\CELL{1}\CELL{\allowbreak \allowbreak 2.\,\allowbreak 224\,6}$};linecolor
+"blue";linestyle 1;pointplot TRUE;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Point";function \TEXUX{$-0.846\,19+5.\,\allowbreak 198\,4x-3.\,\allowbreak
+167\,8x^{2}$};linecolor "black";linestyle 1;discont FALSE;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"0,1";num-x-gridlines 100;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";discont FALSE;rangeset"X";VCamFile 'RFNFEL0A.xvz';valid_file
+"T";tempfilename 'RFNFCK03.wmf';tempfile-properties "XPR";}}
+
+$f_{1}(x)=1$
+
+$f_{2}(x)=x$
+
+$f_{3}(x)=x^{2}$
+
+$A=\left[ 
+\begin{array}{ccc}
+1 & 1 & 1 \\ 
+1 & 0.2 & 0.2^{2} \\ 
+1 & 0.4 & 0.4^{2} \\ 
+1 & 0.6 & 0.6^{2} \\ 
+1 & 0.8 & 0.8^{2} \\ 
+1 & 1.0 & 1%
+\end{array}%
+\right] $, transpose: $\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 \\ 
+1 & 0.04 & 0.16 & 0.36 & 0.64 & 1%
+\end{array}%
+\right] \allowbreak $
+
+Columna: Valores de Y en S:
+
+$Y=\left[ 
+\begin{array}{c}
+0 \\ 
+0.177\,71 \\ 
+\allowbreak \allowbreak \allowbreak 0.537\,54 \\ 
+1.\,\allowbreak 033 \\ 
+1.\,\allowbreak 606\,5 \\ 
+\allowbreak \allowbreak 2.\,\allowbreak 224\,6%
+\end{array}%
+\right] $
+
+$T=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 \\ 
+1 & 0.04 & 0.16 & 0.36 & 0.64 & 1%
+\end{array}%
+\right] \allowbreak $
+
+$C=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 \\ 
+1 & 0.04 & 0.16 & 0.36 & 0.64 & 1%
+\end{array}%
+\right] \allowbreak \left[ 
+\begin{array}{ccc}
+1 & 1 & 1 \\ 
+1 & 0.2 & 0.2^{2} \\ 
+1 & 0.4 & 0.4^{2} \\ 
+1 & 0.6 & 0.6^{2} \\ 
+1 & 0.8 & 0.8^{2} \\ 
+1 & 1.0 & 1%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{ccc}
+6.0 & 4.0 & 3.\,\allowbreak 2 \\ 
+4.0 & 3.\,\allowbreak 2 & 2.\,\allowbreak 8 \\ 
+3.\,\allowbreak 2 & 2.\,\allowbreak 8 & 2.\,\allowbreak 566\,4%
+\end{array}%
+\right] \allowbreak $
+
+$D=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 \\ 
+1 & 0.04 & 0.16 & 0.36 & 0.64 & 1%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+0 \\ 
+0.177\,71 \\ 
+\allowbreak \allowbreak \allowbreak 0.537\,54 \\ 
+1.\,\allowbreak 033 \\ 
+1.\,\allowbreak 606\,5 \\ 
+\allowbreak \allowbreak 2.\,\allowbreak 224\,6%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+5.\,\allowbreak 579\,4 \\ 
+4.\,\allowbreak 380\,2 \\ 
+3.\,\allowbreak 717\,8%
+\end{array}%
+\right] \allowbreak $
+
+$F=\left[ 
+\begin{array}{ccc}
+6.0 & 4.0 & 3.\,\allowbreak 2 \\ 
+4.0 & 3.\,\allowbreak 2 & 2.\,\allowbreak 8 \\ 
+3.\,\allowbreak 2 & 2.\,\allowbreak 8 & 2.\,\allowbreak 566\,4%
+\end{array}%
+\right] ^{-1}\left[ 
+\begin{array}{c}
+5.\,\allowbreak 579\,4 \\ 
+4.\,\allowbreak 380\,2 \\ 
+3.\,\allowbreak 717\,8%
+\end{array}%
+\right] \allowbreak =\allowbreak \left[ 
+\begin{array}{c}
+-0.846\,19 \\ 
+5.\,\allowbreak 198\,4 \\ 
+-3.\,\allowbreak 167\,8%
+\end{array}%
+\right] \allowbreak $
+
+\[
+g(x)=-0.846\,19+5.\,\allowbreak 198\,4x-3.\,\allowbreak 167\,8x^{2}
+\]
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 1- Columna 1: Reemplazamos cada valor de x con A=\{1\}
+
+2- Columna 2: Reemplazamos cada valor de x con A=\{x\}
+
+3- Columna 3: Reemplazamos cada valor de x con A=\{x2\}
+
+$A=\left[ 
+\begin{array}{ccc}
+1 & 1 & 1 \\ 
+1 & 1.2 & 1.44 \\ 
+1 & 1.4 & 1.96 \\ 
+1 & 1.6 & 2.56 \\ 
+1 & 1.8 & 3.24 \\ 
+1 & 2.0 & 4%
+\end{array}%
+\right] $
+
+\bigskip Columna: Valores de Y en S:
+
+$Y=\left[ 
+\begin{array}{c}
+1 \\ 
+1 \\ 
+1.\,\allowbreak 016\,4 \\ 
+1.\,\allowbreak 041\,8 \\ 
+1.\,\allowbreak 071\,3 \\ 
+1.\,\allowbreak 102\,2%
+\end{array}%
+\right] $
+
+\bigskip
+
+Calculamos la transpuesta de A:
+
+$A$, transpose: $\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \allowbreak $
+
+$A^{t}=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] $
+
+!!Cuidado con el orden de multiplicar
+
+Calculamos el producto de A(transpuesta) x A:
+
+$C=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \left[ 
+\begin{array}{ccc}
+1 & 1 & 1 \\ 
+1 & 1.2 & 1.44 \\ 
+1 & 1.4 & 1.96 \\ 
+1 & 1.6 & 2.56 \\ 
+1 & 1.8 & 3.24 \\ 
+1 & 2.0 & 4%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{ccc}
+6.0 & 9.0 & 14.\,\allowbreak 2 \\ 
+9.0 & 14.\,\allowbreak 2 & 23.\,\allowbreak 4 \\ 
+14.\,\allowbreak 2 & 23.\,\allowbreak 4 & 39.\,\allowbreak 966%
+\end{array}%
+\right] \allowbreak $
+
+\bigskip
+
+Calculamos el producto de A(transpuesta) x Y:
+
+$D=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+1 \\ 
+1 \\ 
+1.\,\allowbreak 016\,4 \\ 
+1.\,\allowbreak 041\,8 \\ 
+1.\,\allowbreak 071\,3 \\ 
+1.\,\allowbreak 102\,2%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] $
+
+\bigskip
+
+Multiplicamos C$^{-1}$ x D:
+
+\bigskip $R=\left[ 
+\begin{array}{ccc}
+6.0 & 9.0 & 14.\,\allowbreak 2 \\ 
+9.0 & 14.\,\allowbreak 2 & 23.\,\allowbreak 4 \\ 
+14.\,\allowbreak 2 & 23.\,\allowbreak 4 & 39.\,\allowbreak 966%
+\end{array}%
+\right] ^{-1}\left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+1.\,\allowbreak 075\,3 \\ 
+-0.170\,54 \\ 
+9.\,\allowbreak 258\,4\times 10^{-2}%
+\end{array}%
+\right] \allowbreak 
+\begin{array}{c}
+a0 \\ 
+a1 \\ 
+a2%
+\end{array}%
+$
+
+\bigskip Reemplazamos R en la f(x) con los a sub n.
+
+$A=\{1,x,x^{2}\}$
+
+$f(x)=a_{0}+a_{1}x+a_{2}x^{2}$
+
+\[
+f(x)=1.0753-0.17054x+9.\,\allowbreak 258\,4\times 10^{-2}x^{2}
+\]
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+$\allowbreak $
+
+\bigskip
+
+Calculamos el producto de A(transpuesta) x Y:
+
+$D=\left[ 
+\begin{array}{cccccc}
+1 & 1 & 1 & 1 & 1 & 1 \\ 
+1 & 1.\,\allowbreak 2 & 1.\,\allowbreak 4 & 1.\,\allowbreak 6 & 
+1.\,\allowbreak 8 & 2.0 \\ 
+1 & 1.\,\allowbreak 44 & 1.\,\allowbreak 96 & 2.\,\allowbreak 56 & 
+3.\,\allowbreak 24 & 4%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+1 \\ 
+1 \\ 
+1.\,\allowbreak 016\,4 \\ 
+1.\,\allowbreak 041\,8 \\ 
+1.\,\allowbreak 071\,3 \\ 
+1.\,\allowbreak 102\,2%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] $
+
+\bigskip
+
+Multiplicamos C$^{-1}$ x D:
+
+\bigskip $R=\left[ 
+\begin{array}{ccc}
+6.0 & 9.0 & 14.\,\allowbreak 2 \\ 
+9.0 & 14.\,\allowbreak 2 & 23.\,\allowbreak 4 \\ 
+14.\,\allowbreak 2 & 23.\,\allowbreak 4 & 39.\,\allowbreak 966%
+\end{array}%
+\right] ^{-1}\left[ 
+\begin{array}{c}
+6.\,\allowbreak 231\,7 \\ 
+9.\,\allowbreak 422\,6 \\ 
+14.\,\allowbreak 979%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+1.\,\allowbreak 075\,3 \\ 
+-0.170\,54 \\ 
+9.\,\allowbreak 258\,4\times 10^{-2}%
+\end{array}%
+\right] \allowbreak 
+\begin{array}{c}
+a0 \\ 
+a1 \\ 
+a2%
+\end{array}%
+$
+
+\bigskip Reemplazamos R en la f(x) con los a sub n.
+
+$A=\{1,x,x^{2}\}$
+
+$f(x)=a_{0}+a_{1}x+a_{2}x^{2}$
+
+\[
+f(x)=1.0753-0.17054x+9.\,\allowbreak 258\,4\times 10^{-2}x^{2} 
+\]
+
+\end{document}

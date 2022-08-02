@@ -1,0 +1,371 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, July 25, 2022 10:07:24}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 10:40:54}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\[
+\text{\emph{Ex\'{a}men final del 27/07/2021}} 
+\]
+
+\frame{\emph{1-}\textit{\ Defina los polinomios de Tchebyshev y demuestre la
+f\'{o}rmula recursiva para calcularlos. Demuestre adem\'{a}s que son
+ortogonales con el producto interno dado por:}}\textit{\ }
+
+\[
+(f|g)=\int\limits_{-1}^{1}\frac{f(x)g(x)}{\sqrt[2]{1-x^{2}}}dx 
+\]
+
+\frame{\emph{Respuesta:}\textit{\ }}
+
+Para cada $n$ $\in 
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+$,\textit{\ la funci\'{o}n }$T_{n}:\left[ -1,1\right] \rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{dada por }$T_{n}(x)=\cos (n$ $\arccos (x))$ \textit{se denomina n-%
+\'{e}simo polinomio de Tchebyshev si: }
+
+$n=0\rightarrow $ $T_{0}(x)=1$
+
+$n=1\rightarrow T_{1}(x)=x$
+
+\textit{Sea }$\arccos (x)=\theta $,\textit{\ entonces tenemos lo siguiente:}
+
+$T_{n+1}(n)=\cos ((n+1)\theta )=\cos (n\theta +\theta )=\cos (n\theta )\cos
+(\theta )-\sin (n\theta )\sin (\theta )$
+
+$T_{n-1}(n)=\cos ((n-1)\theta )=\cos ((n\theta -\theta ))=\cos (n\theta
+)\cos (\theta )+\sin (n\theta )\sin (\theta )$
+
+\bigskip \textit{Sumando miembro a miembro se tiene }$%
+T_{n+1}(x)+T_{n-1}(x)=2\cos (\theta )\cos (n\theta )=2xT_{n}(x),$ \textit{%
+donde: }\frame{$T_{n+1}=2xT_{n}(x)-T_{n-1}(x)$}.
+
+$\bullet $ \textit{Ortogonalidad de los poinomios de chebyshev:}
+
+\textit{Los polinomios de Tchebyshev }$T_{n}$ \textit{son ortogonales con el
+producto interno:}
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \frame{$(f$ $%
+|$ $g)=\int\limits_{-1}^{1}f(x)g(x)\omega (x)dx$}
+
+\textit{donde, }\frame{$\omega (x)=\frac{1}{\sqrt{1-x^{2}}}$}
+
+\textit{Sean }$j,k\in 
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+$ \textit{con }$j\neq k$, \textit{queremos que }$(T_{j}|T_{k})=0$ $%
+\rightarrow (T_{j}|T_{k})=\int\limits_{-1}^{1}T_{j}(x)T_{k}(x)\omega
+(x)dx=\int\limits_{-1}^{1}\cos (j\arccos (x))\cos (\alpha \arccos (x))\frac{1%
+}{\sqrt[2]{1-x^{2}}}dx.$
+
+Sea $\theta =\arccos (x)$\textit{, entonces }$\partial \theta =\frac{-1}{%
+\sqrt[2]{1-x^{2}}}dx$\textit{, de modo que }$(T_{j}|T_{k})=\int\limits_{0}^{%
+\pi }\cos (j\theta )\cos (k\theta )d\theta =\left[ \frac{1}{k}\sin (k\theta
+)\cos (j\theta )\right] _{0}^{\pi }+\frac{j}{k}\int\limits_{0}^{\pi }\sin
+(j\theta )\sin (k\theta )d\theta $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\frac{j}{k}\left[ -\frac{1}{k}\left[
+\sin (j\theta )\cos (k\theta )\right] _{0}^{\pi }+\frac{j}{k}%
+\int\limits_{0}^{\pi }\cos (j\theta )\cos (k\theta )\right] $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\frac{j^{2}}{k^{2}}(T_{j}|T_{k}),$%
+\textit{esto es }$(T_{j}|T_{k})=\frac{j^{2}}{k^{2}}$. \textit{Si }$%
+(T_{i}|T_{k})\neq 0$
+
+\textit{Tenemos que }$1=\frac{j^{2}}{k^{2}}$ \textit{contradiciendo que }$%
+j\neq k$ \textit{por lo tanto tenemos que }$(T_{j}|T_{k})=0$\textit{\ si }$%
+j\neq k$. $\rightarrow $ \frame{\emph{Son ortogonales}}.
+
+\bigskip
+
+\frame{\emph{2-}\textit{\ Defina los polinomios de Lagrange }$L_{k}$ \textit{%
+para los puntos }$x_{1},\ldots ,x_{n},$\textit{\ tales que }$%
+x_{0}<x_{1}<\cdots <x_{n}.$ \textit{Si }$c_{k}=L_{k}(0)$\textit{, demuestre
+que:}}
+
+$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\sum\limits_{k=0}^{n}c_{k}x_{k}^{j}=\left\{ 
+\begin{array}{c}
+1\text{ \textit{si }}j=0 \\ 
+0\text{ \textit{si }}j=1,2,\ldots ,n. \\ 
+(-1)^{n}x_{0},x_{1},\ldots ,x_{n}.\text{\textit{si }}j=n+1.%
+\end{array}%
+\right. $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}\subset $ $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{2}$.\textit{\ Se trata de hallar un polinomio de grado n tal que }$%
+P(x_{k})=y_{k}$ \textit{para }$k=0,1,2,3,\cdot \cdot \cdot \cdot ,n$.
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}\subset $ $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{2}$, \emph{entonces existe un \'{u}nico polinomio}\textit{\ }$P$ \textit{%
+de grado n tal que }$P(x_{k})=y_{k}$ \textit{para }$k=0,1,2,3,\cdot \cdot
+\cdot \cdot ,n$.
+
+$\bullet $ \ $\ \ \ $\textit{Sea P y Q polinomios de grado n tal que }$%
+P(x_{k})=y_{k}$ \textit{y }$Q(x_{k})=y_{k}$ \textit{para }$k=0,1,2,3,\cdot
+\cdot \cdot \cdot ,n.$
+
+\textit{Sea el polinomio }$H(x)=P(x)-Q(x)$, \textit{entonces el grado de }$%
+H\leq n$ \textit{y }$H(x_{k})=0\mathit{\ }$\textit{para }$k=0,1,2,3,\cdot
+\cdot \cdot \cdot ,n$, \textit{esto es, }$H$\textit{\ tiene }$n+1$\textit{\
+raices pero el grado de }$H\leq n,$\textit{\ por lo tanto} $H$ \textit{es el
+polinomio nulo, o sea}, $\ H(x)=0$ \textit{para todo} $x\in R$. $\ \ \ \ \
+\bullet $
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}$ \textit{tal que} $%
+x_{0}<x_{1}<x_{2}<\cdot \cdot \cdot <x_{n}.$\textit{Para }$k=0,1,2,\cdot
+\cdot \cdot ,n.$
+
+\textit{Sea} $L_{k}$ \textit{el polinomio de grado n dado por:}
+
+\[
+L_{k}(x)=\frac{(x-x_{0})(x-x_{1})\cdot \cdot \cdot
+(x-x_{k-1})(x-x_{k+1})\cdot \cdot \cdot (x-x_{n})}{%
+(x_{k}-x_{0})(x_{k}-x_{1})\cdot \cdot \cdot
+(x_{k}-x_{k-1})(x_{k}-x_{k+1})\cdot \cdot \cdot (x_{k}-x_{n})} 
+\]
+
+\[
+L_{k}(x)=\prod\limits_{k=0,k\neq j}^{n}\frac{(x-x_{j})}{(x_{k}-x_{j})} 
+\]
+
+\textit{Dado }$\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}\,$, \textit{con }$%
+x_{0}<x_{1}<\cdots <x_{n},$ \textit{el polinomio }$L(x)=\sum%
+\limits_{i=0}^{n}y_{i}L_{i}(x).$
+
+$\bullet $ \textit{Si }$i=k$ \textit{entonces todos los t\'{e}rminos son }$%
+\frac{x_{k}-x_{j}}{x_{k}-x_{j}}$ \textit{y por lo tanto es igual a 1.}
+
+$\bullet \mathit{\ }$\textit{Si }$i\neq k$ \textit{entonces se produce que} $%
+j=k$ \textit{en alg\'{u}n t\'{e}rmino de la productoria quedando }$\frac{%
+x_{i}-x_{i}}{x_{k}-x_{i}}$\textit{, haciendo 0 todo el producto}
+
+\textit{Por lo tanto} $L_{k}(x)=1$\textit{\ en el punto }$x_{k}$ \textit{e
+igual a 0 en todos los otros puntos.}
+
+\textit{Entonces: }\frame{$\sum\limits_{k=0}^{n}L_{k}(x_{0})=1$}
+
+\bigskip \frame{\emph{3-}\textit{\ Obtenga el m\'{e}todo de Simpson o
+Trapecio para integraci\'{o}n num\'{e}rica.}}
+
+\textit{Sea }$f:\left[ a,b\right] \rightarrow R$\textit{\ continua y sea }$%
+P=\left\{ x_{1}/a=x_{0}<x_{1}<x_{2}<\cdots <x_{n}=b\right\} $\textit{\ una
+partici\'{o}n del intervalo }$\left[ a,b\right] $ \textit{tal que }$%
+x_{k}=x_{0}+kh$\textit{, donde }\fbox{$h=\frac{b-a}{n}$}.\textit{\
+Aproximaremos el valor de }$\int_{a}^{b}f(x)dx$ \textit{con }$%
+I(f)=\int_{a}^{b}L(x)dx$\textit{\ donde }\fbox{\textit{\ }$L$\textit{\ es el
+polinomio interpolante de Lagrange }} \textit{para el conjunto de puntos }$%
+S=\left\{ (x_{i},f(x_{i}))\right\} _{i=0}^{n}$. \textit{Por lo tanto }\fbox{$%
+L(x)=\sum\limits_{i=0}^{n}f(x_{i})L_{i}(x)$} , donde \fbox{$L_{i}(x)=\frac{%
+\prod\limits_{j\neq i}(x-x_{j})}{\prod\limits_{j\neq i}(x_{i}-x_{j})}$}
+
+\textit{Entonces, }$I_{n}(f)=\int_{a}^{b}L(x)dx=\int_{a}^{b}\left[
+\sum\limits_{i=0}^{n}f(x_{i})L_{i}(x)\right] dx=\sum%
+\limits_{i=0}^{n}f(x_{i})\int_{a}^{b}L_{i}(x)dx=\sum%
+\limits_{i=0}^{n}f(x_{i})c_{i}$,\textit{\ donde, }$c_{i}=%
+\int_{a}^{b}L_{i}(x)dx$.
+
+\textit{Miremos }$c_{i}$\textit{\ en detalle:}
+
+$c_{i}=\frac{1}{\prod\limits_{j\neq i}(x_{i}-x_{j})}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx=\frac{1}{\prod\limits_{j\neq
+i}(x_{0}+ih-x_{0}-jh)}\dint_{a}^{b}\left[ \prod\limits_{j\neq i}(x-x_{j})%
+\right] dx=\frac{1}{\prod\limits_{j\neq i}(i-j)h}\dint_{a}^{b}\left[
+\prod\limits_{j\neq i}(x-x_{j})\right] dx=$\fbox{$\frac{1}{%
+h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{a}^{b}\left[ \prod\limits_{j\neq
+i}(x-x_{j})\right] dx$}.\textit{\ Hacemos ahora el cambio de variable }$%
+x=x_{0}+th$\textit{, entonces }$h=dt$\textit{\ y por lo tanto}
+
+$c_{i}=$\textit{\ }$\frac{1}{h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}%
+\left[ \prod\limits_{j\neq i}(x_{0}+th-x_{0}-jh)\right] h$ $dt=\frac{1}{%
+h^{n}\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}\left[ \prod\limits_{j\neq
+i}(t-j)h\right] dt=\frac{h^{n+1}}{h^{n}\prod\limits_{j\neq i}(i-j)}%
+\dint_{0}^{n}\left[ \prod\limits_{j\neq i}(t-j)h\right] dt=$\fbox{$\frac{h}{%
+\prod\limits_{j\neq i}(i-j)}\dint_{0}^{n}\left[ \prod\limits_{j\neq i}(t-j)h%
+\right] dt$}
+
+\fbox{\emph{Ejemplo}}
+
+\fbox{$n=1$}
+
+$I(f)=c_{0}(f(x_{0}))+c_{1}(f(x_{1}))$\ \ $=$\ \fbox{$\frac{x_{1}-x_{0}}{2}%
+\left[ f(x_{0})+f(x_{1})\right] \rightarrow \frac{b-a}{2}=(f(a)+f(b))$}
+
+\fbox{$n=2$}
+
+\fbox{$I_{2}(f)=\frac{h}{3}\left[ f(x_{0})+4f(x_{0}+h)+f(x_{0}+2h)\right]
+\rightarrow $ \emph{Metodo de Simpson}}
+
+Trapecio:
+
+\fbox{$n=3\rightarrow $ \emph{M\'{e}todo de Simpson}\textit{\ }$\frac{3}{8}$}
+
+\[
+I_{3}(f)=\frac{3h}{8}\left[ f(x_{0})+3f(x_{1})+3f(x_{2})+f(x_{3})\right] 
+\]
+
+\fbox{$n=14\rightarrow $ \emph{(Por ejemplo, para n par)}}
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[ f(x_{0})+4\sum\limits_{j=0}^{\frac{n}{2}%
+-1}f(x_{2j+1})+2\sum\limits_{j=1}^{\frac{n}{2}-1}f(x_{2j})+f(x_{n})\right] 
+\]
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[
+f(x_{0})+4f(x_{1})+2f(x_{2})+4f(x_{3})+2f(x_{4})+4f(x_{5})+2f(x_{6})+4f(x_{7})+2f(x_{8})+4f(x_{9})+2f(x_{10})+4f(x_{11})+2f(x_{12})+4f(x_{13})+f(x_{14})%
+\right] 
+\]
+
+\frame{\emph{4- }\textit{Desarrolle la teor\'{\i}a de aproximaci\'{o}n de m%
+\'{\i}nimos cuadrados para aproximar una funci\'{o}n }$f:\left[ a,b\right]
+\rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{usando la familia de funciones }$\left\{ f_{k}\right\} _{k=1}^{m}.$
+\textit{Obtenga el sistema de ecuaciones normales.}}
+
+$f:\left[ a,b\right] \rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{continua y }$A=\left\{ f_{k}\right\} _{k=1}^{m}\subset c$ $(\left[
+a,b\right] ),$\textit{\ entonces }$g=\sum\limits_{i=1}^{n}c_{k}f_{k}$ 
+\textit{es la mejor aproximaci\'{o}n a }$f$ si\textit{\ }$c_{1},c_{2},\cdots
+,c_{m}$ \textit{es soluci\'{o}n del sistema de ecuaciones lineales }$%
+\sum\limits_{j=1}^{m}c_{j}(f_{j}$ $|$ $f_{i})=(f$ $|$ $f_{j})$ $i\in $ $%
+J_{m}.$
+
+$\bullet $ \textit{Si }$A=\left\{ f_{k}\right\} _{k=1}^{m}$ \textit{es una
+familia ortogonal, esto es, }$(f_{j}$ $|$ $f_{i})=0$ \textit{si }$i\neq j$,%
+\textit{\ entonces el sistema de ecuaciones normales toma la forma }$%
+\left\Vert f_{i}\right\Vert ^{2}c_{j}=(f|f_{i})$ \textit{para cada }$i\in $ $%
+J_{m}$ \textit{de donde }\fbox{$c_{i}=\frac{(f|f_{i})}{\left\Vert
+f_{i}\right\Vert ^{2}}$}
+
+\bigskip
+
+\frame{\emph{5-}\textit{\ Sea }$f:%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+\rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{de clase }$C^{\infty \text{ }}$\textit{y sea }$\xi $ \textit{una
+raiz simple de }$f$ \textit{tal que }$f^{\prime }(\xi )\neq 0$. \textit{Si }$%
+y_{n}=x_{n}-\frac{f(x_{n})}{f^{\prime }(x_{n})}$ \textit{muestre que la
+interaci\'{o}n }$x_{n+1}=y_{n}-\frac{f(x_{n})}{f^{\prime }(x_{n})}$ \textit{%
+converge c\'{u}bicamente a }$\xi .$}
+
+\bigskip
+
+\textit{Sea} $g:R\rightarrow R$ \textit{de clase} $C^{\infty }$ \textit{y
+sea la sucesion} $\left\{ P_{n}\right\} $ \textit{dada por} $%
+P_{n}=g(P_{n-1}) $\textit{. Si} $p$ \textit{es un punto fijo de }$g$ \textit{%
+y} $g^{(k)}(p)=0$ \textit{para} $k=1,2,3,4,\cdot \cdot \cdot ,m-1$ \textit{y}
+$g^{(m)}(p)\neq 0 $, \textit{entonces la sucesi\'{o}n} $\left\{
+P_{n}\right\} $ \textit{converge a }$P$ \textit{con orden de convergencia }$m
+$ \textit{y constante asint\'{o}tica:}
+
+\[
+\beta =\frac{\left\vert g^{(m)}(p)\right\vert }{m!} 
+\]
+
+\textit{Sea }$f:%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+\rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ $f(p)=0$ $\left\{ p_{n}\right\} $ $p_{n}\rightarrow p$ \textit{donde }$%
+p_{n}=g(p_{n-1})$ \textit{y }$g(x)=x-\frac{f(x)}{f^{\prime }(x)}$
+
+\frame{\emph{Derivamos}\textit{\ }$g:$}
+
+$g^{\prime }(x)=1-\frac{\left[ f^{\prime }(x)\right] ^{2}-f(x)f^{\prime
+\prime }(x)}{\left[ f^{\prime }(x)\right] ^{2}}=\frac{f(x)f^{\prime \prime
+}(x)}{\left[ f^{\prime }(x)\right] ^{2}}\Longrightarrow g^{\prime }(p)=0$
+
+$g^{\prime }(x)=f^{\prime }(x)\frac{f^{\prime \prime }(x)}{\left[ f^{\prime
+}(x)\right] ^{2}}+f(x)\frac{d}{dx}\left[ \frac{f^{\prime \prime }(x)}{\left[
+f^{\prime }(x)\right] ^{2}}\right] \Longrightarrow g^{\prime \prime }(x)=%
+\frac{f^{\prime \prime }(p)}{f^{\prime }(p)}\neq 0.$
+
+\frame{\textit{Si }$p$\textit{\ es una raiz simple de }$f$ \textit{y }$%
+f^{\prime \prime }(p)\neq $ $0$, \textit{entonces el m\'{e}todo de Newton
+Raphson tiene convergencia cuadr\'{a}tica.}}
+
+\end{document}

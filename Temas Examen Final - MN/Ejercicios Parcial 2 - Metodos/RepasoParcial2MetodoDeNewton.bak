@@ -1,0 +1,118 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Saturday, June 11, 2022 14:53:29}
+%TCIDATA{LastRevised=Monday, June 13, 2022 20:05:52}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ METODO DE NEWTON\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+\begin{eqnarray*}
+\frac{b-a}{n} &=&h \\
+\frac{b-a}{h} &=&n
+\end{eqnarray*}
+
+\begin{eqnarray*}
+n(sub\text{ }intervalos) &=&1\rightarrow \frac{1}{2}(x_{1}-x_{0})\left[
+f(x_{0})+f(x_{1})\right] \\
+n &=&2\rightarrow \frac{h}{3}\left[ f(x_{0})+4f(x_{1})+f(x_{2})\right] \\
+n &=&3\rightarrow \frac{3}{8}h\left[ f(x_{0})+3f(x_{1})+3f(x_{2})+f(x_{3})%
+\right] \\
+n &=&1\text{ cotas }\rightarrow \frac{(b-a)^{3}}{12}f^{\prime \prime }(\xi )
+\\
+n &=&2\text{ cotas}\rightarrow \frac{h^{5}}{90}f^{(4)}(\xi )
+\end{eqnarray*}
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ METODO DE SIMPSON
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\bigskip 1- Calcular la integral de la funcion en el intervalo
+
+$f(x)=\cos (x)$ para $x\in \left[ 1,5\right] \qquad \qquad \qquad \qquad
+\qquad $Enunciado
+
+$\int_{1}^{5}\cos (x)dx=\allowbreak \sin 5-\sin 1=\allowbreak
+-1.\,\allowbreak 800\,\ \qquad \qquad \ \ \ \ \ \ $Integral
+
+$a=1$
+
+$b=5$
+
+2- Calcular el h
+
+$h=\frac{(b-a)=5-1}{n=2}=\allowbreak 2$
+
+3- Reemplazar en la formula de acuerdo al n(dato) y con el h
+
+\ \ \ \ $\frac{h}{3}\left[ f(x_{0})+4f(x_{1})+f(x_{2})\right] \qquad \qquad
+\qquad \qquad \qquad \qquad \qquad $x$_{0}$ es a, x$_{2}$ es b y x$_{1}$
+tiene que estar entre medio
+
+\ \ \ \ $I_{2}(f)=\frac{2}{3}\left[ \cos (1)+4\cos (3)+\cos (5)\right]
+=-2.0907$
+
+4- Cuando el intervalo es muy grande, la aproximacion es mala, si achicamos
+el intervalo $\left[ a,b\right] $, la aproximacion sera mejor
+
+Intervalo mas chico: $\left[ 1,1.4\right] $ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+5- Integramos funcion original con el intervalo mas chico
+
+$\int_{1}^{1.4}\cos (x)dx=\allowbreak 0.143\,98$
+
+6- Calculamos el h nuevamente, con el intervalo mas chico
+
+$h=\frac{(1.4-1)}{2}=\allowbreak 0.2$
+
+7- Reemplazar en la formula de acuerdo al n(dato) y con el h nuevo
+
+$\frac{0.2}{3}\left[ \cos (1)+4\cos (1.2)+\cos (1.4)\right] =0.14398$
+
+Para calcular las cotas tenemos que derivar a f respecto de x, 
+
+si la n es igual a 1:\ derivamos dos veces. 
+
+si la n es igual a 2:\ derivamos cuatro veces. 
+
+\end{document}

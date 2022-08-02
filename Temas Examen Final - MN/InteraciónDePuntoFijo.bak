@@ -1,0 +1,126 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wednesday, July 13, 2022 12:59:48}
+%TCIDATA{LastRevised=Wednesday, July 13, 2022 13:44:20}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\[
+\text{\emph{Interaci\'{o}n de Punto Fijo}}
+\]
+
+\textit{Sea }$f:R\rightarrow R$ \textit{continua y sea }$\left( a,b\right)
+\subset dom(f)$ \textit{tal que} $f(a)f(b)<0$ $\mathit{\ }$\textit{entonces
+existe un punto }$P$ \textit{tal que }$f(P)=0$.
+
+\textit{El problema a resolver es obtener }$P$,\textit{\ esto es, hallar una
+solucion de la ecuaci\'{o}n }$f(x)=0$.
+
+\textit{Si }$f(x)=0$,\textit{\ entonces,}$f(x)=0\leftrightarrow f(x)+x=x$ 
+\textit{y llamando }$g(x)=f(x)+x$ \textit{tenemos que }$g(x)=x.$
+
+\bigskip 
+
+\[
+\text{\emph{Definici\'{o}n}}
+\]
+
+\bigskip \textit{Sea }$g:R\rightarrow R$. \textit{Si }$x$\textit{\ }$\in $ $%
+dom(g)$ \textit{tal que }$g(x)=x$\textit{\ se dice que }$x$\textit{\ es un
+punto fijo de }$g.$
+
+\bigskip 
+
+\[
+\text{\emph{Teorema}}
+\]
+
+\textit{Sea }$g:\left[ a,b\right] \rightarrow \left[ a,b\right] $ \fbox{$%
+a\leq x\leq b\rightarrow a\leq g(x)\leq b$} \textit{continua, entonces} $g$%
+\textit{\ tiene un punto fijo en el intervalo }$\left[ a,b\right] $.
+
+\bigskip 
+
+\[
+\text{\emph{Demostraci\'{o}n}}
+\]
+
+\textit{Sea }$h:\left[ a,b\right] \rightarrow R$ \textit{dada por }$%
+h(x)=x-g(x)$,\textit{\ entonces }$h$ \textit{es continua. Por otro lado }$%
+h(a)=a-g(a)\leq 0$ \textit{y }$h(b)=b-g(b)\geq 0$. \textit{Luego, por el
+teorema de los valores intermedios, existe }$p\in \left[ a,b\right] $ 
+\textit{tal que }$h(p)=0$ \textit{\'{o} equivalentemente }$g(p)=p$.
+
+\FRAME{dtbpFX}{3.0969in}{2.0652in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 3.0969in;height 2.0652in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "-1";xmax "1";xviewmin "-1.00020000020004";xviewmax
+"1.00020000020004";yviewmin "-4.00080000080016";yviewmax
+"4.00080000080016";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$4x$};linecolor "black";linestyle 1;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"-1,1";num-x-gridlines 100;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";rangeset"X";function \TEXUX{$2x^{3}+1$};linecolor "blue";linestyle
+1;pointstyle "point";linethickness 1;lineAttributes "Solid";var1range
+"-1,1";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Line";rangeset"X";function
+\TEXUX{$\MATRIX{2,1}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,}\CELL{0.26}%
+\CELL{1}$};linecolor "green";linestyle 1;pointplot TRUE;pointstyle
+"point";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Point";VCamFile
+'REYWQ70A.xvz';valid_file "T";tempfilename
+'REYWJ400.wmf';tempfile-properties "XPR";}}
+
+\bigskip 
+
+\[
+\text{\emph{Teorema}}
+\]
+
+\textit{Sea }$g:\left[ a,b\right] \rightarrow R$ \textit{de clase }$C^{1}$ 
+\textit{tal que }$\left\vert g^{\prime }(x)\right\vert \leq r<1$\textit{\
+para todo }$x\in \left[ a,b\right] $. \textit{Si }$g$ \textit{tiene punto
+fijo en }$\left[ a,b\right] $\textit{\ \'{e}ste es \'{u}nico.}
+
+\bigskip 
+
+\[
+\text{\emph{Demostraci\'{o}n}}
+\]
+
+\end{document}

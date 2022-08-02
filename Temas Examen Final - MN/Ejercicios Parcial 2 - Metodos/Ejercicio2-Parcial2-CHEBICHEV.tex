@@ -1,0 +1,120 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, June 13, 2022 14:16:00}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 08:46:31}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$f(x)=(1+x^{2})^{\frac{1}{1+x^{2}}}$
+%$a=0$
+%$b=1$
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\bigskip Chebichev
+
+2) Aproxime la funcion del ejercicio 1 usando los poliniomios de CHEBICHEV
+hasta grado 2.
+
+\bigskip $f(x)=(1+x^{2})^{\frac{1}{1+x^{2}}}\qquad \qquad $intervalo: $[0,1]$
+
+$a=0$
+
+$b=1$
+
+$T_{0}=1\qquad \qquad \qquad \qquad \qquad $Inventar si no las da, desde 0
+
+$T_{1}=x\qquad \qquad \qquad \qquad \qquad $hasta el grado de dato.
+
+$T_{2}=2x^{2}-1$
+
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad !!!!Formula:
+
+\[
+g(x)=\frac{1}{b-a}(2x-a-b)=\frac{1}{1-0}(2x-0-1)=\allowbreak 2x-1 
+\]
+
+1- Reemplazar g(x) en los T.
+
+$T_{g(x)0}=1$
+
+$T_{g(x)1}=2x-1$
+
+$T_{g(x)2}=2(2x-1)^{2}-1$
+
+2- Calcular los C. La integral va siempre de 0 a $\pi .$
+
+$c_{0}=\frac{1}{\pi }\int_{0}^{\pi }f(\frac{1}{2}(b-a)\cos (\theta )+\frac{%
+a+b}{2})\cos (0\theta )d\theta =\allowbreak 1.\,\allowbreak 199\,0$
+
+$c_{1}=\frac{2}{\pi }\int_{0}^{\pi }f(\frac{1}{2}(b-a)\cos (\theta )+\frac{%
+a+b}{2})\cos (1\theta )d\theta =\allowbreak 0.227\,85$
+
+$c_{2}=\frac{2}{\pi }\int_{0}^{\pi }f(\frac{1}{2}(b-a)\cos (\theta )+\frac{%
+a+b}{2})\cos (2\theta )d\theta =\allowbreak 6.\,\allowbreak 021\,4\times
+10^{-3}$
+
+$\bigskip $3- Hacer el polinomio h. !!Usar la formula de h(x)
+
+\[
+h(x)=c_{0}(T_{g(x)0})+c_{1}(T_{g(x)1})+c_{2}(T_{g(x)2}) 
+\]
+
+\[
+h(x)=1.\,\allowbreak 199\,0(1)+\allowbreak 0.227\,85(2x-1)+6.\,\allowbreak
+021\,4\times 10^{-3}(2(2x-1)^{2}-1) 
+\]
+
+$f(x)$\FRAME{dtbpFX}{4.4996in}{3in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "0";xmax "1";xviewmin "-0.00010000010002";xviewmax
+"1.00010000010002";yviewmin "0.97712582995399";yviewmax
+"1.43291697005001";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$f(x)$};linecolor "black";linestyle 1;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"0,1";num-x-gridlines 100;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";rangeset"X";function \TEXUX{$1.\,\allowbreak 199\,0(1)+\allowbreak
+0.227\,85(2x-1)+6.\,\allowbreak 021\,4\times
+10^{-3}(2(2x-1)^{2}-1)$};linecolor "yellow";linestyle 1;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"0,1";num-x-gridlines 100;curveColor "[flat::RGB:0x00ffff00]";curveStyle
+"Line";rangeset"X";VCamFile 'RDFGMT09.xvz';valid_file "T";tempfilename
+'RDFGLK02.wmf';tempfile-properties "XPR";}}
+
+\end{document}

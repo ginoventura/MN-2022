@@ -1,0 +1,152 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, July 18, 2022 13:43:44}
+%TCIDATA{LastRevised=Monday, July 18, 2022 14:24:32}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\[
+\text{\emph{Aproximaci\'{o}n(caso discreto)}}
+\]
+
+\textit{Sea }$S=\left\{ (x_{i},y_{i})\right\} _{i=1}^{n}$\textit{\ y sea la
+familia de funciones }$A=\left\{ f_{k}\right\} _{k=1}^{m}$\textit{\ tales
+que }$\left\{ x_{i}\right\} _{i=1}^{n}\subset n_{k=1}^{m}$ \textit{dom}$%
+(f_{k}).$
+
+\textit{Sean }$Y=\sum\limits_{j=1}^{n}$ \textit{y }$c_{j}(I_{n})$ \textit{y }%
+$Z=\sum\limits_{j=1}^{n}f(x_{j})c_{j}(I_{n})$ \textit{donde }$%
+f=\sum\limits_{k=1}^{m}a_{k}f_{k}$,\textit{\ queremos determinar los valore }%
+$a_{1},a_{2},\cdots ,a_{m}$\textit{\ para los cuales }$\left\Vert
+Y-Z\right\Vert $ \textit{sea minimo.}
+
+\textit{Por un lado }$Z=\sum\limits_{j=1}^{n}f(x_{j})c_{j}(I_{n})=\sum%
+\limits_{j=1}^{n}\left( \sum\limits_{j=1}^{n}a_{k}f_{k}(x_{j})\right)
+c_{j}(I_{n})$
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ $=\sum\limits_{k=1}^{m}\left(
+\sum\limits_{j=1}^{n}f_{k}(x_{j})c_{j}(I_{n})\right)
+a_{k}=\sum\limits_{k=1}^{m}a_{k}c_{k}(A)$ \textit{donde }$%
+e_{ij}(A)=f_{j}(x_{i})$ \textit{y por otro lado }$Z=A\left[ 
+\begin{array}{c}
+a_{1} \\ 
+a_{2} \\ 
+\vdots  \\ 
+a_{m}%
+\end{array}%
+\right] $ \textit{(propiedad de la multiplicaci\'{o}n de matrices) y ademas }%
+$Z\in W_{c}(A).$ \textit{Si }$Z$ \textit{es la mejor aproximaci\'{o}n a }$Y$%
+\textit{, tenemos que }$Y-Z$ \textit{es perpendicular con }$W_{c}(A)$ 
+\textit{o equivalentemente }$(Y-Z|c_{j}(A))=0\leftrightarrow
+(Y-Z)^{t}cj(A)=0\leftrightarrow c_{j}(-(-Z)^{t}A)=0\leftrightarrow
+(Y-Z)^{t}A=0\leftrightarrow A^{t}(Y-Z)=0\leftrightarrow
+A^{t}Y-A^{t}Z=0\leftrightarrow A^{t}Z=A^{t}Y\leftrightarrow A^{t}A\left[ 
+\begin{array}{c}
+a_{1} \\ 
+a_{2} \\ 
+\vdots  \\ 
+a_{m}%
+\end{array}%
+\right] =A^{t}Y$,\textit{\ de donde }$(A^{t}A)^{-1}A^{t}Y.$
+
+\bigskip 
+
+\[
+\text{\emph{Ecuaciones Diferenciales}}
+\]
+
+\textit{Sea la ecuaci\'{o}n diferencial de orden }$n,y^{n}=f(x,y,y^{\prime
+},y^{\prime \prime },\cdots ,y^{(n-1)})$ \textit{y hagamos }$%
+U_{0}=y,U_{1}=y^{\prime },U_{2}=y^{\prime \prime },\cdots ,U_{n-1}=y^{(n-1)}.
+$
+
+\textit{Sea }$H=\left[ 
+\begin{array}{c}
+U_{o} \\ 
+U_{1} \\ 
+U_{2} \\ 
+\vdots  \\ 
+U_{n-2} \\ 
+U_{n-1}%
+\end{array}%
+\right] $,\textit{entonces }$H^{\prime }=\left[ 
+\begin{array}{c}
+U_{1} \\ 
+U_{2} \\ 
+U_{3} \\ 
+\vdots  \\ 
+U_{n-1} \\ 
+f(x,U_{0},U_{1},\cdots ,U_{n-1})%
+\end{array}%
+\right] =G(x,H)$
+
+$\bullet $\textit{Sea }$y^{\prime }=f(x,y)$, $a\leq x\leq b,$ $y(a)=y_{0};$ 
+\textit{sea }$P=\left\{ a+ih/i=0,1,\cdots ,n\right\} $ \textit{una partici%
+\'{o}n del intervalo }$\left[ a,b\right] $\textit{, donde }$h=\frac{b-a}{n}$%
+. Si $y(x)$ \textit{es la soluci\'{o}n de la ecuac\'{o}n, cuando la serie de
+Taylor de y con }$x_{i}=a+ih$.
+
+$y(x_{i+1})=y(x_{i})+y^{\prime }(x_{i})h+\frac{1}{2}y^{\prime \prime }(\xi
+_{i})h^{2}$ \ \textit{con }$x_{i}\leq \xi \leq x_{i+1}.$
+
+\textit{Para }$h$\textit{\ suficientemente peque\~{n}o }$y(x_{i})\cong
+y(x_{i})+hy^{\prime }(x_{i}$ $)=y(x_{i})+hf(x_{i},y(x_{i})),$ \textit{%
+entonces la soluci\'{o}n }$\left\{ W_{i}\right\} _{i=0}^{n-1}$\textit{\ dada
+por }$W_{i+1}=W_{i}+hf(x_{i},W_{i})$ \textit{aproxima los valores de la funci%
+\'{o}n soluci\'{o}n }$y(x)$ \textit{y a continuaci\'{o}n se aplica teoria de
+aproximaci\'{o}n para el caso discreto(M\'{e}todo de Euler).}
+
+\bigskip 
+
+\[
+\text{\emph{M\'{e}todo de Runge-Kutta de cuarto orden.}}
+\]
+
+$y^{\prime }=f(x,y)=\allowbreak $ $a\leq x\leq b$ \ $y(a)=y_{0},$ $%
+x_{i}=a+ih,$ $h=\frac{b-a}{n}$. \textit{La sucesi\'{o}n }$\left\{
+W_{i}\right\} _{i=0}^{n-1}$ \textit{con }$W_{0}=y_{0}$ \textit{est\'{a} dada
+por:}
+
+\[
+W_{i+1}=W_{i}+\frac{1}{6}(k_{1}+2k_{2}+2k_{3}+k_{4})
+\]
+
+\textit{De donde }$k_{1}=hf(x_{i},W_{i}),$ $k_{2}=hf(x_{i}+\frac{h}{2},W_{i}%
+\frac{1}{2}k_{1}),$ $k_{3}=hf(x_{i}+\frac{h}{2};W_{i}+\frac{1}{2}k_{2}),$ $%
+k_{4}=hf(x_{i}+h;W_{i}+k_{3})$
+
+\end{document}

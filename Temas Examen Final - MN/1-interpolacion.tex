@@ -1,0 +1,146 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, July 12, 2022 15:52:16}
+%TCIDATA{LastRevised=Tuesday, July 26, 2022 09:39:49}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$L_{0}(x)=\frac{(x-5)(x-6)}{(3-5)(3-6)}=\allowbreak 0.166\,67\left(
+%x-5.0\right) \allowbreak \left( x-6.0\right) $
+%$L_{1}(x)=\frac{(x-3)(x-6)}{(5-3)(5-6)}=\allowbreak -0.5\left( x-6.0\right)
+%\left( x-3.0\right) $
+%$\bigskip L_{2}(x)=\frac{(x-3)(x-5)}{(6-3)(6-5)}=\allowbreak 0.333\,33\left(
+%x-5.0\right) \allowbreak \left( x-3.0\right) $
+%$L(x)=4L_{0}(x)+9L_{1}(x)+12L_{2}(x)=\allowbreak 0.666\,67\left(
+%x-5.0\right) \allowbreak \left( x-6.0\right) +4.0\left( x-5.0\right) \left(
+%x-3.0\right) -\allowbreak 4.\,\allowbreak 5\left( x-6.0\right) \left(
+%x-3.0\right) $
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+\[
+\ \mathbf{\ Interpolaci\acute{o}n\ de\ Lagrange}
+\]
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}\subset $ $R^{2}$.%
+\textit{\ Se trata de hallar un polinomio de grado n tal que }$P(x_{k})=y_{k}
+$ \textit{para }$k=0,1,2,3,\cdot \cdot \cdot \cdot ,n$.
+
+\[
+\mathbf{Teorema} 
+\]
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}\subset $ $R^{2}$, 
+\emph{entonces existe un \'{u}nico polinomio}\textit{\ }$P$ \textit{de grado
+n tal que }$P(x_{k})=y_{k}$ \textit{para }$k=0,1,2,3,\cdot \cdot \cdot \cdot
+,n$.
+
+\[
+\mathbf{Demostraci\acute{o}n} 
+\]
+
+\textit{Sea P y Q polinomios de grado n tal que }$P(x_{k})=y_{k}$ \textit{y }%
+$Q(x_{k})=y_{k}$ \textit{para }$k=0,1,2,3,\cdot \cdot \cdot ,n.$
+
+\textit{Sea el polinomio }$H(x)=P(x)-Q(x)$, \textit{entonces el grado de }$%
+H\leq n$ \textit{y }$H(x_{k})=0\mathit{\ }$\textit{para }$k=0,1,2,3,\cdot
+\cdot \cdot \cdot ,n$, \textit{esto es, }$H$\textit{\ tiene }$n+1$\textit{\
+ra\'{\i}ces pero el grado de }$H\leq n,$\textit{\ por lo tanto} $H$ \textit{%
+es el polinomio nulo, o sea}, $\ H(x)=0$ \textit{para todo} $x\in R$.
+
+\textit{Sea }$S=\left\{ x_{k,}y_{k}\right\} _{k=0}^{n}$ \textit{tal que} $%
+x_{0}<x_{1}<x_{2}<\cdot \cdot \cdot <x_{n}.$\textit{Para }$k=0,1,2,\cdot
+\cdot \cdot ,n.$
+
+\textit{Sea} $L_{k}$ \textit{el polinomio de grado n dado por:}
+
+\[
+L_{k}(x)=\frac{(x-x_{0})(x-x_{1})\cdot \cdot \cdot
+(x-x_{k-1})(x-x_{k+1})\cdot \cdot \cdot (x-x_{n})}{%
+(x_{k}-x_{0})(x_{k}-x_{1})\cdot \cdot \cdot
+(x_{k}-x_{k-1})(x_{k}-x_{k+1})\cdot \cdot \cdot (x_{k}-x_{n})} 
+\]
+
+\textit{Los polinomios} $L_{k}$ \textit{se denominan Polinomios de Lagrange:}
+
+\[
+L_{k}(x_{j})=\{_{1\text{ si }j=k}^{0\text{ si }j\neq k} 
+\]
+
+\textit{Sea ahora el polinomio }$L(1)=\dsum%
+\limits_{k=0}^{n}y_{k}L_{k}(x_{j})=y_{j}L_{j}(x_{j})=y_{j}$.
+
+\textit{Se denomina a} $L$ \emph{el polinomio interpolante de Lagrange.}
+
+\textit{Ejemplo:}
+
+$\bigskip S=\left\{ \left( 3,4\right) \left( 5,9\right) \left( 6,12\right)
+\right\} $
+
+\bigskip $L_{0}(x)=\frac{(x-5)(x-6)}{(3-5)(3-6)}=\allowbreak 0.166\,67\left(
+x-5.0\right) \allowbreak \left( x-6.0\right) $
+
+$L_{1}(x)=\frac{(x-3)(x-6)}{(5-3)(5-6)}=\allowbreak -0.5\left( x-6.0\right)
+\left( x-3.0\right) $
+
+$\bigskip L_{2}(x)=\frac{(x-3)(x-5)}{(6-3)(6-5)}=\allowbreak 0.333\,33\left(
+x-5.0\right) \allowbreak \left( x-3.0\right) $
+
+$L(x)=4L_{0}(x)+9L_{1}(x)+12L_{2}(x)=\allowbreak 0.666\,67\left(
+x-5.0\right) \allowbreak \left( x-6.0\right) +4.0\left( x-5.0\right) \left(
+x-3.0\right) -\allowbreak 4.\,\allowbreak 5\left( x-6.0\right) \left(
+x-3.0\right) $
+
+$L(3)=\allowbreak 4.0$
+
+\[
+\mathbf{Teorema} 
+\]
+
+\textit{Sea }$F:R\rightarrow R$ \textit{de clase }$C^{n+1}$,$\left\{
+x_{k}\right\} _{k=0}^{n}$ \textit{con }$x_{0}<x_{1}<x_{2}<\cdot \cdot \cdot
+<x_{n}$.\textit{Si }$L$ \textit{es el polinomio interpolante de Lagrange de
+grado }$\mathit{n}$\textit{\ para el conjunto }$S=\left\{ \left(
+x_{k},y_{k}\right) \right\} _{k=0}^{n}$ \textit{entonce:}
+
+\[
+f(x)-L(x)=\frac{f(\xi )}{(n+1)!}\dprod\limits_{k=0}^{n}(x-x_{k}) 
+\]
+
+\ \ \ \ \ \ \ \ \ 
+
+\end{document}

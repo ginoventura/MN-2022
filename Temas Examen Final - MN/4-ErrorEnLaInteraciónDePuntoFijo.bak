@@ -1,0 +1,110 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wednesday, July 13, 2022 18:52:20}
+%TCIDATA{LastRevised=Wednesday, July 13, 2022 19:35:33}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\[
+\text{\emph{Error en la interaci\'{o}n de Punto Fijo}}
+\]
+
+\textit{Sea }$g:R\rightarrow R$ \textit{de clase }$C^{1}$ \textit{con }$%
+\left\vert g^{\prime }(x)\right\vert \leq r<1$ \textit{y sea la sucesi\'{o}n 
+}$\left\{ P_{n}\right\} $\textit{\ dada por }$P_{n}=g(P_{n-1})(n\geq 1)$ 
+\textit{tal que }$\underset{n\rightarrow \infty }{\lim }P_{n}=P(g(P)=P)$. 
+\textit{Si }$n,m$ $\in Z^{+}$ \textit{con }$m>n,\left\vert
+P_{m}-P_{n}\right\vert \leq \frac{r^{n}-r^{m}}{1-r}\left\vert
+P_{1}-P_{0}\right\vert $ \textit{y tomamos limite para }$m\rightarrow \infty 
+$ \textit{tenemos }$\left\vert P-P_{n}\right\vert \leq \frac{r^{n}}{1-r}%
+\left\vert P_{1}-P_{0}\right\vert .$
+
+\bigskip 
+
+\textit{Sea }$f:R\rightarrow R$ \textit{de clase }$C^{1}.$ \textit{Queremos
+hallar (si existen) puntos }$x_{0}\in dom(f)$ \textit{tales que }$f(x_{0})=0.
+$ \textit{Por razones pr\'{a}cticas, escribiremos los elementos de }$R^{n}$ 
+\textit{como vectores columna. Aplicando el m\'{e}todo de Newton-Raphson
+tenemos }$G:R^{n}\rightarrow R^{n}$ \textit{dada por }$G(x)=x-\left[ (JF)(x)%
+\right] ^{-1}f(x)$, \textit{entonces la sucesi\'{o}n (vectorial) }$\left\{
+P_{n}\right\} \mathit{\ }$\textit{dada por }$P_{n}=G(P_{n-1})$\textit{\
+tiende a un punto fijo }$P$ \textit{tal que }$f(P)=0.$
+
+\bigskip 
+
+\fbox{\emph{Ejemplo}}
+
+$f(x,y)=(xe^{xy}(2+xy),x^{3}e^{xy}-1)$
+
+\textit{Matriz Jacobiana:}
+
+$\ $\textit{forma }$\rightarrow \bigskip \left[ 
+\begin{array}{cc}
+\partial xx & \partial yx \\ 
+\partial xy & \partial yy%
+\end{array}%
+\right] \rightarrow JF(x,y)=\left[ 
+\begin{array}{cc}
+(2+4xy+x^{2}y^{2})e^{xy} & e^{xy}x^{2}(3+xy) \\ 
+(3x^{2}+x^{3}y)e^{xy} & x^{4}e^{xy}%
+\end{array}%
+\right] $
+
+$G(x,y)=\left[ 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right] -\left[ 
+\begin{array}{cc}
+(2+4xy+x^{2}y^{2})e^{xy} & e^{xy}x^{2}(3+xy) \\ 
+(3x^{2}+x^{3}y)e^{xy} & x^{4}e^{xy}%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+xe^{xy}(2+xy) \\ 
+x^{3}e^{xy}-1%
+\end{array}%
+\right] \leftarrow 
+\begin{array}{c}
+\partial x \\ 
+\partial y%
+\end{array}%
+$
+
+\end{document}

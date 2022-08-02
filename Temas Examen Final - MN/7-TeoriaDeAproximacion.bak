@@ -1,0 +1,206 @@
+
+\documentclass{article}
+\usepackage{amsfonts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Thursday, July 14, 2022 13:01:27}
+%TCIDATA{LastRevised=Saturday, July 16, 2022 16:33:31}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\[
+\text{\emph{Teor\'{\i}a de Aproximaci\'{o}n}}\mathit{\ } 
+\]
+
+\textit{Sea }$v=c$ $(\left[ a,b\right] )\rightarrow $\textit{\ (El espacio
+vectorial de todas las funciones continuas de }$\left[ a,b\right] $ \textit{%
+en }$R$\textit{). Definimos en }$v$ \textit{el producto interno siguiente:}
+
+\[
+(f\text{ }|\text{ }g)=\int\limits_{a}^{b}f(x)g(x)\omega (x)dx 
+\]
+
+\textit{donde }$\omega :\left[ a,b\right] \rightarrow \left( 0,\infty
+\right) $ \textit{es continua. Si }$f\in c$ $(\left[ a,b\right] )$\textit{el
+m\'{o}dulo de }$f$\textit{\ que denotamos }$\left\Vert f\right\Vert $ 
+\textit{est\'{a} dado por }$\left\Vert f\right\Vert =\sqrt[2]{(f\text{ }|%
+\text{ }f)}$, $\left\Vert f\right\Vert ^{2}=(f$ $|$ $f)$ \textit{y dadas }$%
+f,g\in c$ $(\left[ a,b\right] )$,\textit{\ las distancias entre }$f$ \textit{%
+y }$g\in c$ $(\left[ a,b\right] )$,\textit{\ la distancia entre }$f$\textit{%
+\ y }$g$, \textit{denotaremos }$\partial (f,g)$,\textit{\ est\'{a} dada por: 
+}$\partial (f,g)=\left\Vert f-g\right\Vert $
+
+\bigskip
+
+\fbox{\emph{Ejemplo}}
+
+$v=c(\left[ 0,1\right] )$
+
+$f(x)=x^{2}+2$
+
+$g(x)=\sqrt[2]{x}$
+
+$\left\Vert f\right\Vert =(f$ $|$ $f)^{\frac{1}{2}}=\left[
+\int\limits_{1}^{0}(x^{2}+2)dx\right] ^{\frac{1}{2}}$
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\left[ \int%
+\limits_{0}^{1}(x^{4}+4x^{2}+4)dx\right] ^{\frac{1}{2}}$
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\left[ \frac{x^{5}}{5}+\frac{4x^{3}}{%
+3}+4x\right] _{0}^{1}=$\fbox{$\sqrt[2]{\frac{83}{15}}$}
+
+$\left\Vert g\right\Vert =\left[ \int\limits_{0}^{1}x\text{ }dx\right] ^{%
+\frac{1}{2}}=\frac{1}{\sqrt[2]{2}}$
+
+$\partial (f,g)=\left\Vert f-g\right\Vert =\left[ \int%
+\limits_{0}^{1}(x^{2}+2-\sqrt[2]{x})^{2}dx\right] ^{\frac{1}{2}}=$\fbox{$%
+\sqrt[2]{\frac{5}{3}}$}
+
+\bigskip
+
+$\bullet $ Sea $v=c$ $(\left[ a,b\right] )$\textit{\ con el producto interno}%
+$(f$ $|$ $g)$ $=\int\limits_{a}^{b}f(x)g(x)\omega (x)$ $dx$ \textit{y sea }$%
+f\in c$ $(\left[ a,b\right] )$\textit{\ si tenemos la familia }$A=\left\{
+f_{k}\right\} _{k=1}^{m}\subset c$ $(\left[ a,b\right] )$\textit{\ y }$%
+g=\sum\limits_{i=1}^{n}c_{i}f_{i}$\textit{\ queremos determinar los valores
+de }$c_{1},c_{2},\cdots ,c_{m}$, \textit{para los cuales }$\partial (f,g)$ 
+\textit{es m\'{\i}nimo, esto es, }$\left\Vert f-g\right\Vert ^{2}$\textit{\
+es m\'{\i}nimo.}
+
+\textit{Procedemos como sigue : }$\left\Vert f-g\right\Vert ^{2}=(f$ $|$ $%
+f)-2(f$ $|$ $g)+(g$ $|$ $g)=G(c_{1},c_{2},\cdots ,c_{m})$.\textit{\ Como se
+quiere determinar el m\'{\i}nimo de la funci\'{o}n }$G$ \textit{calculamos
+sus derivadas parciales }$\frac{\partial G}{\partial c_{i}}:$
+
+$\frac{\partial G}{\partial c_{i}}(c_{1},c_{2},\cdots ,c_{m})=-2(f$ $|$ $%
+f_{i})+2(f$ $|$ $g),$ \textit{entonces }$\frac{\partial G}{\partial c_{i}}%
+(c_{1},c_{2},\cdots ,c_{m})=0$ \textit{es equivalente a }$(f_{i}|$ $g)=(f$ $|
+$ $f_{i})$ \textit{para todo }$i$ $J_{m}$ \textit{y como }$%
+g=g=\sum\limits_{i=1}^{n}c_{i}f_{i}$ \textit{tenemos }$(\sum%
+\limits_{j=1}^{m}c_{j}f_{j}$ $|$ $f_{i})=(f$ $|$ $f_{i})\Leftrightarrow
+(\sum\limits_{j=1}^{m}c_{j}(f_{j}$ $|$ $f_{i})=(f$ $|$ $f_{i}))%
+\Leftrightarrow $\fbox{$\sum\limits_{j=1}^{m}c_{j}(f_{i}$ $|$ $f_{j})=(f$ $|$
+$f_{j})$ \textit{para todo }$i\in J_{m}.$}
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $%
+\Downarrow $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \fbox{\ \ \ \emph{Sistema de ecuaciones normales }}
+
+\fbox{\emph{Ejemplo:}}
+
+$f(x)=e^{2\tan (x)}$ \ \ \ $0\leq x\leq 1$ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $%
+A=\left\{ f_{k}\right\} _{k=1}^{3}$ $\ \ ;$ $\ \ \ f(x)=x^{k-1}$
+
+$\bigskip $
+
+$(f_{1}|f_{1})c_{1}+(f_{1}|f_{2})c_{2}+(f_{1}|f_{3})c_{3}=(f|f_{1})$
+
+$(f_{2}|f_{1})c_{1}+(f_{2}|f_{2})c_{2}+(f_{2}|f_{3})c_{3}=(f|f_{2})$
+
+$(f_{3}|f_{1})c_{1}+(f_{3}|f_{2})c_{2}+(f_{3}|f_{3})c_{3}=(f|f_{3})$
+
+\bigskip\ \ \ 
+
+$c_{1}+\frac{1}{2}c_{2}+\frac{1}{3}c_{3}=(f|f_{1})$ \ \ \ \ \ \ \ \ \ \ \ \
+\ $\ \ \ c_{1}+\frac{1}{2}c_{2}+\frac{1}{3}c_{3}=5.00023$
+
+$\frac{1}{2}c_{1}+\frac{1}{3}c_{2}+\frac{1}{4}c_{3}=(f|f_{2})$ \ \ \ $%
+\Leftrightarrow $ \ \ \ $\frac{1}{2}c_{1}+\frac{1}{3}c_{2}+\frac{1}{4}%
+c_{3}=3.68243$
+
+$\frac{1}{3}c_{1}+\frac{1}{4}c_{2}+\frac{1}{5}c_{3}=(f|f_{3})$ \ \ \ \ \ \ \
+\ \ \ $\frac{1}{3}c_{1}+\frac{1}{4}c_{2}+\frac{1}{5}c_{3}=3.01428$
+
+\bigskip\ \ 
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \fbox{$c_{1}=2.86299$}
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \fbox{\ $c_{2}=-15.5521$}
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \fbox{\ \ $c_{3}=29.7399$}
+
+\[
+g(x)=2.86299-15.5521x+29.7399x^{2}
+\]
+
+\bigskip 
+
+\[
+\text{\emph{Resumen Importante}}\mathit{\ }
+\]
+
+\bigskip 
+
+$f:\left[ a,b\right] \rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{continua y }$A=\left\{ f_{k}\right\} _{k=1}^{m}\subset c$ $(\left[
+a,b\right] ),$\textit{\ entonces }$g=\sum\limits_{i=1}^{n}c_{k}f_{k}$ 
+\textit{es la mejor aproximaci\'{o}n a }$f$ si\textit{\ }$c_{1},c_{2},\cdots
+,c_{m}$ \textit{es soluci\'{o}n del sistema de ecuaciones lineales }$%
+\sum\limits_{j=1}^{m}c_{j}(f_{j}$ $|$ $f_{i})=(f$ $|$ $f_{j})$ $i\in $ $%
+J_{m}.$
+
+$\bullet $ \textit{Si }$A=\left\{ f_{k}\right\} _{k=1}^{m}$ \textit{es una
+familia ortogonal, esto es, }$(f_{j}$ $|$ $f_{i})=0$ \textit{si }$i\neq j$,%
+\textit{\ entonces el sistema de ecuaciones normales toma la forma }$%
+\left\Vert f_{i}\right\Vert ^{2}c_{j}=(f|f_{i})$ \textit{para cada }$i\in $ $%
+J_{m}$ \textit{de donde }\fbox{$c_{i}=\frac{(f|f_{i})}{\left\Vert
+f_{i}\right\Vert ^{2}}$}
+
+\bigskip 
+
+\fbox{\emph{Teorema: Proceso de ortogonalizaci\'{o}n de GRAM-SCHMIDT}}
+
+\textit{Sea }$A=\left\{ f_{k}\right\} _{k=1}^{m}$ \textit{una familia de
+funciones en }$c$ $(\left[ a,b\right] )$\textit{, y tenemos en }$c$ $(\left[
+a,b\right] )$ \textit{un producto interno. Si }$A$ \textit{es linealmente
+independiente, la familia }$B=\left\{ g_{k}\right\} _{k=1}^{m}$ \textit{dada
+por }$g_{1}=f_{1}$ \textit{y para }$k=1,2,3,\cdots ,m.$ \fbox{$%
+g_{k}=f_{k}-\sum\limits_{j=1}^{k-1}\frac{(f_{k}|g_{j})}{\left\Vert
+g_{j}\right\Vert ^{2}}g_{j}$} \textit{es familia ortogonal.}
+
+\bigskip 
+
+\end{document}

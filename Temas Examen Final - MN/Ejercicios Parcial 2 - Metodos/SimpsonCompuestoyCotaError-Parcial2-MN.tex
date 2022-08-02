@@ -1,0 +1,167 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, June 20, 2022 20:27:15}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 09:27:48}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$n=14$
+%$a=0$
+%$b=1$
+%$f(x)=(1+x^{2})^{x}$
+%$h=\frac{b-a}{n}=\allowbreak 7.\,\allowbreak 142\,9\times 10^{-2}$
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\bigskip
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Use el metodo de Sinson compuesto para aproximar el valor de $%
+I=\int_{0}^{1}(1+x^{2})^{x}dx$. Tome n=14 y calcule una cota para el error.
+
+$I=\int_{0}^{1}(1+x^{2})^{x}dx=\allowbreak 1.\,\allowbreak 240\,2$
+
+$f(x)=(1+x^{2})^{x}$
+
+2. a y b son los valores de la integral.
+
+$n=14$
+
+$a=0\qquad $x0 = a
+
+$b=1\qquad $xn =\ b
+
+3. Calcular el h
+
+$h=\frac{b-a}{n}=\allowbreak 7.\,\allowbreak 142\,9\times 10^{-2}$
+
+4. Calcular los xsubn
+
+$x_{0}=0h=\allowbreak 0.0=0.0$
+
+$x_{1}=0+h=\allowbreak 7.\,\allowbreak 142\,9\times 10^{-2}$
+
+$x_{2}=0+2h=\allowbreak \frac{1}{7}=0.142\,86$
+
+$x_{3}=0+3h=\allowbreak \frac{3}{14}=0.214\,29$
+
+$x_{4}=0+4h=\allowbreak \frac{2}{7}=0.285\,72$
+
+$x_{5}=0+5h=\allowbreak \frac{5}{14}=0.357\,15$
+
+$x_{6}=0+6h=\allowbreak \frac{3}{7}=0.428\,57$
+
+$x_{7}=0+7h=\allowbreak \frac{1}{2}=0.5$
+
+$x_{8}=0+8h=\allowbreak \frac{4}{7}=0.571\,43$
+
+$x_{9}=0+9h=\allowbreak \frac{9}{14}=0.642\,86$
+
+$x_{10}=0+10h=\allowbreak \frac{5}{7}=0.714\,29$
+
+$x_{11}=0+11h=\allowbreak \frac{11}{14}=0.785\,72$
+
+$x_{12}=0+12h=\allowbreak \frac{6}{7}=0.857\,15$
+
+$x_{13}=0+13h=\allowbreak \frac{13}{14}=0.928\,58$
+
+$x_{14}=0+14h=\allowbreak 1=1.0$
+
+5. Reemplazar en la formula:
+
+Primer termino f(a)
+
+Los ximpares son +4
+
+Los xpares son +2
+
+Ultimo termino f(b)
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[ f(x_{0})+4\sum\limits_{j=0}^{\frac{n}{2}%
+-1}f(x_{2j+1})+2\sum\limits_{j=1}^{\frac{n}{2}-1}f(x_{2j})+f(x_{n})\right] 
+\]
+
+\QTP{Body Math}
+\[
+I(f)=\frac{h}{3}\left[
+f(x_{0})+4f(x_{1})+2f(x_{2})+4f(x_{3})+2f(x_{4})+4f(x_{5})+2f(x_{6})+4f(x_{7})+2f(x_{8})+4f(x_{9})+2f(x_{10})+4f(x_{11})+2f(x_{12})+4f(x_{13})+f(x_{14})%
+\right] 
+\]
+
+\QTP{Body Math}
+$\qquad I(f)=\frac{h}{3}%
+(f(0)+4f(1h)+2f(2h)+4f(3h)+2f(4h)+4f(5h)+2f(6h)+4f(7h)+2f(8h)+4f(9h)+2f(10h)+4f(11h)+2f(12h)+4f(13h)+f(1))\allowbreak 
+$ : $1.\,\allowbreak 240\,2=1.\,\allowbreak 240\,2\allowbreak $
+
+\QTP{Body Math}
+6. Calcular la cota para el error:
+
+\QTP{Body Math}
+7. Reemplazar en la formula segun si el n es par o impar.
+
+\QTP{Body Math}
+$R_{n}=I_{n}(f)-\int_{a}^{b}f(x)dx$
+
+\QTP{Body Math}
+$I_{n}(f)=$Resultado de arriba
+
+\QTP{Body Math}
+$\int_{a}^{b}f(x)dx=$Integral de la funcion original
+
+\QTP{Body Math}
+$R_{n}(f)\{%
+\begin{array}{c}
+\frac{1}{(n+1)!}R_{n}(x^{n+1})f^{(n+1)}(\xi ) \\ 
+\frac{1}{(n+2)!}R_{n}(x^{n+2})f^{(n+2)}(\xi )%
+\end{array}%
+\begin{array}{c}
+\text{Si n es impar} \\ 
+\text{Si n es par}%
+\end{array}%
+$
+
+\QTP{Body Math}
+$R_{x}(f)=\frac{1}{(14+2)!}(1.\,\allowbreak 240\,2-1.\,\allowbreak
+2402)f^{(14+2)}(\xi )=\allowbreak 0.0$
+
+\QTP{Body Math}
+$\bigskip $
+
+\QTP{Body Math}
+$\qquad $
+
+\end{document}

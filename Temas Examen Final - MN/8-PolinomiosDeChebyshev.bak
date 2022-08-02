@@ -1,0 +1,180 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Saturday, July 16, 2022 16:34:14}
+%TCIDATA{LastRevised=Monday, July 25, 2022 11:03:15}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\[
+\text{\emph{Polinomios de Tchebyshev}} 
+\]
+
+\fbox{\emph{Definici\'{o}n:}}
+
+Para cada $n$ $\in 
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+$,\textit{\ la funci\'{o}n }$T_{n}:\left[ -1,1\right] \rightarrow 
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+$ \textit{dada por }$T_{n}(x)=\cos (n$ $\arccos (x))$ \textit{se denomina n-%
+\'{e}simo polinomio de Tchebyshev si }$n=0$, $T_{0}(x)=\cos (0)=1$
+
+$n=1,$ $T_{1}(x)=x$
+
+\textit{Sea }$\arccos (x)=\theta $,\textit{\ entonces tenemos lo siguiente:}
+
+$T_{n+1}(n)=\cos ((n+1)\theta )=\cos (n\theta +\theta )=\cos (n\theta )\cos
+(\theta )-\sin (n\theta )\sin (\theta )$
+
+$T_{n-1}(n)=\cos ((n-1)\theta )=\cos ((n\theta -\theta ))=\cos (n\theta
+)\cos (\theta )+\sin (n\theta )\sin (\theta )$
+
+\textit{Sumando miembro a miembro se tiene }$T_{n+1}(x)+T_{n-1}(x)=2\cos
+(\theta )\cos (n\theta )=2xT_{n}(x)$ \textit{donde: }\fbox{$%
+T_{n+1}=2xT_{n}(x)-T_{n-1}(x)$}
+
+\fbox{\emph{Teorema: }}
+
+\textit{La familia }$A=\left\{ T_{k}\right\} _{k\geq 0}$ \textit{de
+polinomios de Tchebyshev es una familia ortogonal en }$c(\left[ -1,1\right] )
+$ \textit{el producto interno dado por }$(f|g)=\int\limits_{-1}^{1}f(x)g(x)%
+\omega (x),$ \textit{de donde }$\omega (x)=\frac{1}{\sqrt[2]{1-x^{2}}}.$
+
+\fbox{\emph{Demostraci\'{o}n:}}
+
+\textit{Sean }$j,k\in 
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+$ \textit{con }$j\neq k$, \textit{queremos que }$(T_{j}|T_{k})=0$ $%
+\rightarrow (T_{j}|T_{k})=\int\limits_{-1}^{1}T_{j}(x)T_{k}(x)\omega
+(x)dx=\int\limits_{-1}^{1}\cos (j\arccos (x))\cos (\alpha \arccos (x))\frac{1%
+}{\sqrt[2]{1-x^{2}}}dx.$
+
+Sea $\theta =\arccos (x)$\textit{, entonces }$\partial \theta =\frac{-1}{%
+\sqrt[2]{1-x^{2}}}dx$\textit{, de modo que }$(T_{j}|T_{k})=\int\limits_{0}^{%
+\pi }\cos (j\theta )\cos (k\theta )d\theta =\left[ \frac{1}{k}\sin (k\theta
+)\cos (j\theta )\right] _{0}^{\pi }+\frac{j}{k}\int\limits_{0}^{\pi }\sin
+(j\theta )\sin (k\theta )d\theta $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\frac{j}{k}\left[ -\frac{1}{k}\left[
+\sin (j\theta )\cos (k\theta )\right] _{0}^{\pi }+\frac{j}{k}%
+\int\limits_{0}^{\pi }\cos (j\theta )\cos (k\theta )\right] $
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=\frac{j^{2}}{k^{2}}(T_{j}|T_{k}),$%
+\textit{esto es }$(T_{j}|T_{k})=\frac{j^{2}}{k^{2}}$. \textit{Si }$%
+(T_{i}|T_{k})\neq 0$
+
+\textit{Tenemos que }$1=\frac{j^{2}}{k^{2}}$ \textit{contradiciendo que }$%
+j\neq k$ \textit{por lo tanto tenemos que }$(T_{j}|T_{k})=0$\textit{\ si }$%
+j\neq k$.
+
+$\bullet $ \textit{Observaci\'{o}n: }$\left\Vert T_{0}\right\Vert
+^{2}=(T_{0}|T_{0})=\int\limits_{-1}^{1}T_{k}(x)T_{k}(x)\omega
+(x)dx=\int\limits_{-1}^{1}\cos ^{2}(x)(k\arccos (x))\frac{1}{\sqrt[2]{1-x^{2}%
+}}dx=\int\limits_{0}^{\pi }\cos ^{2}(k\theta )d\theta =\int\limits_{0}^{\pi
+}(\frac{1}{2}+\frac{1}{2}\cos (2k\theta ))d\theta =$\fbox{$\frac{\pi }{2}$}
+
+\textit{Finalmente }$(f|T_{k})=\int\limits_{-1}^{1}f(x)T_{k}(x)\omega
+(x)dx=\int\limits_{-1}^{1}f(x)\cos (k\arccos (x))=\frac{1}{\sqrt[2]{1-x^{2}}}%
+dx=\int\limits_{0}^{\pi }f(\cos (\theta ))\cos (k\theta )d\theta $ \textit{%
+luego si }$f\in $\textit{\ }$c(\left[ -1,1\right] )$ \textit{la mejor
+aproximac\'{\i}\'{o}n usando los polinomios de Tchebyshev es }$%
+g=\sum\limits_{k=0}^{m}c_{k}T_{k}$ \textit{donde }\fbox{$c_{0}=\frac{%
+(f|T_{0})}{\pi }$} \textit{y }\fbox{$c_{k}=\frac{2}{\pi }(f|T_{k})$}.
+
+\textit{Sea }$f\in c(\left[ a,b\right] )$ \textit{y sea }$g:\left[ a,b\right]
+\rightarrow \left[ -1,1\right] $,\textit{\ dada por }$g(x)=\frac{2}{b-a}x-%
+\frac{a+b}{b-a}$ \textit{entonces }$g\left( \left[ a,b\right] \right) =\left[
+-1,1\right] $ \textit{y para cada }$k\in 
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+$,\textit{\ sea }$\widetilde{T}_{k}(x)=T_{k}(g(x))$.\textit{\ Sea ademas }$%
+\widetilde{\omega }(x)=\omega (g(x))$ \textit{donde }$\omega (x)=\frac{1}{%
+\sqrt[2]{1-x^{2}}}$.\textit{\ Veamos que la familia }$A=\left\{ \widetilde{T}%
+_{k}\right\} _{k\geq 0}\subset c(\left[ a,b\right] )$ \textit{es una familia
+ortogonal con el producto interno }$(f|g)=\int\limits_{a}^{b}f(x)g(x)\omega
+(x)dx.$
+
+$(\widetilde{T}_{k}|\widetilde{T}_{j})=\int\limits_{a}^{b}\widetilde{T}%
+_{k}(x)\widetilde{T}_{j}(x)\widetilde{\omega }(x)dx=\int\limits_{a}^{b}%
+\widetilde{T}_{k}(g(x))\widetilde{T}_{j}(g(x))\widetilde{\omega }(g(x))dx.$ 
+\textit{Hacemos ahora el cambio de variable }$g(x)=t\,$,\textit{\ entonces }$%
+dt=g^{\prime }(x)dx=\frac{2}{b-a}dx$,\textit{\ por lo tanto }$(\widetilde{T}%
+_{k}|\widetilde{T}_{j})=\int\limits_{-1}^{1}T_{k}(t)T_{j}(t)\omega (t)\frac{%
+b-a}{2}dt=\frac{b-a}{2}\int\limits_{-1}^{1}T_{k}(t)T_{j}(t)\omega (t)dt=0$ 
+\textit{si }$j\neq k$.
+
+$\left\Vert \widetilde{T}_{0}\right\Vert ^{2}=(\widetilde{T}_{0}|\widetilde{T%
+}_{0})=\frac{b-a}{2}(T_{0}|T_{0})=\frac{\pi }{2}(b-a)$
+
+$\left\Vert \widetilde{T}_{k}\right\Vert ^{2}=(\widetilde{T}_{k}|\widetilde{T%
+}_{k})=\frac{b-a}{2}(\widetilde{T}_{k}|\widetilde{T}_{k})=\frac{\pi }{4}%
+(b-a) $
+
+$c_{0}=\frac{(f|\widetilde{T}_{0})}{\left\Vert \widetilde{T}_{0}\right\Vert
+^{2}}=\frac{2}{\pi (b-a)}(f|\widetilde{T}_{0})$
+
+$c_{k}=\frac{4}{\pi (b-a)}(f|\widetilde{T}_{k})$ \textit{si }$k\geq 1.$
+
+$(f|\widetilde{T}_{k})=\int\limits_{a}^{b}f(x)\widetilde{T}_{k}(x)\widetilde{%
+\omega }(x)dx=\int\limits_{a}^{b}f(x)T_{k}(g(x))\omega (x)dx=$
+
+\ \ \ \ \ \ \ \ $=\int\limits_{a}^{b}f(x)(k\arccos (\theta ))\frac{1}{\sqrt[2%
+]{1-g^{2}(x)}}dx=\int\limits_{0}^{\pi }f(g^{-1}(\cos (\theta )))\cos
+(k\theta )\frac{b-a}{2}d\theta =$\frame{$\frac{b-a}{2}\int\limits_{0}^{\pi
+}fg^{-1}(\cos (\theta ))\cos (k\theta )d\theta $}.
+
+$c_{k}=\frac{4}{\pi (b-a)}\frac{b-a}{2}\int\limits_{0}^{\pi }f(g^{-1}(\cos
+(\theta )))\cos (k\theta )d\theta =\frac{2}{\pi }\int\limits_{0}^{\pi
+}f(g^{-1}(\cos (\theta )))\cos (k\theta )d\theta =$\frame{$%
+\int\limits_{0}^{\pi }f(\frac{2\cos (\theta )}{b-a}+\frac{2(b+a)}{(b-a)^{2}}%
+)\cos (k\theta )d\theta $}
+
+\end{document}

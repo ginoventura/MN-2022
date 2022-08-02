@@ -1,0 +1,361 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, June 21, 2022 18:40:25}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 20:06:02}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{ComputeDefs=
+%$f(x,y)=\frac{1-xy}{1+y^{4}}$
+%$g_{1}(x)=1$
+%$g_{2}(x)=x$
+%$g_{3}(x)=x^{2}$
+%$Y=\left[ 
+%\begin{array}{c}
+%1.2 \\ 
+%1.25 \\ 
+%1.29 \\ 
+%1.31 \\ 
+%1.33 \\ 
+%1.33 \\ 
+%1.31%
+%\end{array}%
+%\right] $
+%$A=\left[ 
+%\begin{array}{ccc}
+%1 & 0 & 0 \\ 
+%1 & 0.16 & 0.16^{2} \\ 
+%1 & 0.33 & 0.33^{2} \\ 
+%1 & 0.50 & 0.50^{2} \\ 
+%1 & 0.66 & 0.66^{2} \\ 
+%1 & 0.83 & 0.83^{2} \\ 
+%1 & 1 & 1%
+%\end{array}%
+%\right] $
+%$f_{1}(x)=1$
+%$f_{2}(x)=x$
+%$f_{3}(x)=x^{2}$
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+$f(x)=(\frac{1}{1+x^{2}})^{x}$
+
+intervalo $\left[ -1,2\right] $
+
+$g_{1}(x)=1$
+
+$g_{2}(x)=x$
+
+$g_{3}(x)=x^{2}$
+
+\bigskip 
+
+matriz Y:
+
+$\int_{-1}^{2}g_{1}(x)f(x)dx=\allowbreak 2.\,\allowbreak 285\,9$
+
+$\int_{-1}^{2}f(x)g_{2}(x)dx=\allowbreak -4.\,\allowbreak 582\,0\times
+10^{-2}$
+
+$\int_{-1}^{2}f(x)g_{3}(x)dx=\allowbreak 1.\,\allowbreak 095\,5$
+
+\bigskip 
+
+$Y=\left[ 
+\begin{array}{c}
+\allowbreak 2.\,\allowbreak 285\,9 \\ 
+-4.\,\allowbreak 582\,0\times 10^{-2} \\ 
+1.\,\allowbreak 095\,5%
+\end{array}%
+\right] $
+
+Matriz A:
+
+fila 1
+
+$\int_{-1}^{2}g_{1}(x)g_{1}(x)dx=\allowbreak 3.0$
+
+$\int_{-1}^{2}g_{1}(x)g_{2}(x)dx=\allowbreak 1.\,\allowbreak 5$
+
+$\int_{-1}^{2}g_{1}(x)g_{3}(x)dx=\allowbreak 3.0$
+
+\bigskip fila 2
+
+$\int_{-1}^{2}g_{2}(x)g_{2}(x)dx=\allowbreak 3.0$
+
+$\int_{-1}^{2}g_{2}(x)g_{1}(x)dx=\allowbreak 1.\,\allowbreak 5$
+
+$\int_{-1}^{2}g_{2}(x)g_{3}(x)dx\allowbreak =\allowbreak 3.\,\allowbreak 75$
+
+fila 3
+
+$\int_{-1}^{2}g_{3}(x)g_{3}(x)dx=\allowbreak 6.\,\allowbreak 6$
+
+$\int_{-1}^{2}g_{3}(x)g_{1}(x)dx=\allowbreak 3.0$
+
+$\int_{-1}^{2}g_{2}(x)g_{3}(x)dx=\allowbreak 3.\,\allowbreak 75$
+
+\bigskip 
+
+$A=\left[ 
+\begin{array}{ccc}
+3 & 1.5 & 3.0 \\ 
+1.5 & 3 & 3.75 \\ 
+3 & 3.75 & 6.6%
+\end{array}%
+\right] $
+
+$X=A^{-1}Y=\allowbreak \left[ 
+\begin{array}{c}
+1.\,\allowbreak 026\,7 \\ 
+-0.527\,13 \\ 
+-1.\,\allowbreak 207\,4\times 10^{-3}%
+\end{array}%
+\right] \allowbreak $
+
+$h(x)=1.0267-0.52713x-(1.\,\allowbreak 207\,4\times 10^{-3})x^{2}$\FRAME{%
+dtbpFX}{3.653in}{2.4353in}{0pt}{}{}{Plot}{\special{language "Scientific
+Word";type "MAPLEPLOT";width 3.653in;height 2.4353in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"-1";xmax "2";xviewmin "-1.00030000030006";xviewmax
+"2.00030000030006";yviewmin "-0.032592839118536E0";yviewmax
+"2.00020323916004";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$1.0267-0.52713x-(1.\,\allowbreak 207\,4\times
+10^{-3})x^{2}$};linecolor "blue";linestyle 1;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"-1,2";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Line";rangeset"X";function \TEXUX{$(\frac{1}{1+x^{2}})^{x}$};linecolor
+"black";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "-1,2";num-x-gridlines 100;curveColor
+"[flat::RGB:0000000000]";curveStyle "Line";VCamFile
+'RDUM0405.xvz';valid_file "T";tempfilename
+'RDUM0401.wmf';tempfile-properties "XPR";}}
+
+\bigskip 4)  $f(x,y)=\frac{1-xy}{1+y^{4}}$
+
+$\left[ 
+\begin{array}{cc}
+0 & 1.2 \\ 
+0.16667 & \allowbreak 1.\,\allowbreak 254\,2 \\ 
+0.333\,34 & 1.\,\allowbreak 292\,1 \\ 
+0.500\,01 & 1.\,\allowbreak 317\,2 \\ 
+\allowbreak 0.666\,68 & 1.\,\allowbreak 335\,9 \\ 
+0.833\,35 & \allowbreak 1.\,\allowbreak 331\,4 \\ 
+1 & 1.\,\allowbreak 318\,1%
+\end{array}%
+\right] $
+
+
+$x_{i}=a+ih$
+
+$0.166\,67\ast 6=\allowbreak 1.0$
+
+$y_{k+1}=y_{k}+hf(x_{k},y_{k})$
+
+$y_{k+1}=1.2+\frac{1}{6}(f(0,1.2))=\allowbreak 1.\,\allowbreak 254\,2$
+
+$y_{k+1}=\allowbreak 1.\,\allowbreak 254\,2+\frac{1}{6}(f(0.16667,1.\,%
+\allowbreak 254\,2))=\allowbreak 1.\,\allowbreak 292\,1$
+
+$y_{k+1}=1.\,\allowbreak 292\,1+\frac{1}{6}(f(0.333\,34,\allowbreak
+1.\,\allowbreak 292\,1))=\allowbreak 1.\,\allowbreak 317\,2$
+
+$y_{k+1}=\allowbreak \allowbreak 1.\,\allowbreak 317\,2+\frac{1}{6}%
+(f(0.500\,01,\allowbreak 1.\,\allowbreak 317\,2))=\allowbreak
+1.\,\allowbreak 331\,4$
+
+$y_{k+1}=\allowbreak 1.\,\allowbreak 331\,4+\frac{1}{6}(f(\allowbreak
+0.666\,68,\allowbreak 1.\,\allowbreak 331\,4))=\allowbreak 1.\,\allowbreak
+335\,9$
+
+\bigskip $y_{k+1}=\allowbreak \allowbreak 1.\,\allowbreak 335\,9+\frac{1}{6}%
+(f(\allowbreak 0.833\,35,\allowbreak 1.\,\allowbreak 335\,9))=\allowbreak
+1.\,\allowbreak 331\,4$
+
+\bigskip $y_{k+1}=\allowbreak \allowbreak \allowbreak 1.\,\allowbreak 331\,4+%
+\frac{1}{6}(f(\allowbreak 1,\allowbreak \allowbreak 1.\,\allowbreak
+331\,4))=\allowbreak 1.\,\allowbreak 318\,1$
+
+entonces:
+
+$S=\left\{ (0,1.2)(0.16667,1.\,\allowbreak 254\,2)(0.333\,34,1.\,\allowbreak
+292\,1)(0.500\,01,1.\,\allowbreak 317\,2)(\allowbreak 0.666\,68,\allowbreak
+1.\,\allowbreak 335\,9)(0.833\,35,\allowbreak 1.\,\allowbreak
+331\,4)(1,1.\,\allowbreak 318\,1)\right\} $\FRAME{dtbpFX}{4.4996in}{2.1802in%
+}{0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+4.4996in;height 2.1802in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-5";xmax "5";xviewmin
+"-0.00010000010002";xviewmax "1.00010000010002";yviewmin
+"1.19978697999";yviewmax "1.33001302";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patchnogrid";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function
+\TEXUX{$\MATRIX{2,7}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,,,,,,}\CELL{0}%
+\CELL{1.2}\CELL{0.16}\CELL{1.25}\CELL{0.33}\CELL{1.29}\CELL{0.50}\CELL{1.31}%
+\CELL{0.66}\CELL{1.33}\CELL{0.83}\CELL{1.33}\CELL{1}\CELL{1.31}$};linecolor
+"black";linestyle 1;pointplot TRUE;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0000000000]";curveStyle
+"Point";function \TEXUX{$1.1998+0.34910x-0.23651x^{2}$};linecolor
+"blue";linestyle 1;discont FALSE;pointstyle "point";linethickness
+1;lineAttributes "Solid";var1range "0,1";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";discont
+FALSE;rangeset"X";VCamFile 'RDUO480C.xvz';valid_file "T";tempfilename
+'RDUO3W03.wmf';tempfile-properties "XPR";}}
+
+\bigskip $S=\left\{ (0,1.2)(0.16667,1.\,\allowbreak
+254\,2)(0.333\,34,1.\,\allowbreak 292\,1)(0.500\,01,1.\,\allowbreak
+317\,2)(\allowbreak 0.666\,68,\allowbreak 1.\,\allowbreak
+335\,9)(0.833\,35,\allowbreak 1.\,\allowbreak 331\,4)(1,1.\,\allowbreak
+318\,1)\right\} $
+
+$f_{1}(x)=1$
+
+$f_{2}(x)=x$
+
+$f_{3}(x)=x^{2}$
+
+\bigskip $A=\left[ 
+\begin{array}{ccc}
+1 & 0 & 0 \\ 
+1 & 0.16 & 0.16^{2} \\ 
+1 & 0.33 & 0.33^{2} \\ 
+1 & 0.50 & 0.50^{2} \\ 
+1 & 0.66 & 0.66^{2} \\ 
+1 & 0.83 & 0.83^{2} \\ 
+1 & 1 & 1%
+\end{array}%
+\right] $
+
+$A$, transpose: $\left[ 
+\begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+0 & 0.16 & 0.33 & 0.5 & 0.66 & 0.83 & 1 \\ 
+0 & 0.025\,6 & 0.108\,9 & 0.25 & 0.435\,6 & 0.688\,9 & 1%
+\end{array}%
+\right] \allowbreak $
+
+$Y=\left[ 
+\begin{array}{c}
+1.2 \\ 
+1.25 \\ 
+1.29 \\ 
+1.31 \\ 
+1.33 \\ 
+1.33 \\ 
+1.31%
+\end{array}%
+\right] $
+
+$C=\left[ 
+\begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+0 & 0.16 & 0.33 & 0.5 & 0.66 & 0.83 & 1 \\ 
+0 & 0.025\,6 & 0.108\,9 & 0.25 & 0.435\,6 & 0.688\,9 & 1%
+\end{array}%
+\right] \left[ 
+\begin{array}{ccc}
+1 & 0 & 0 \\ 
+1 & 0.16 & 0.16^{2} \\ 
+1 & 0.33 & 0.33^{2} \\ 
+1 & 0.50 & 0.50^{2} \\ 
+1 & 0.66 & 0.66^{2} \\ 
+1 & 0.83 & 0.83^{2} \\ 
+1 & 1 & 1%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{ccc}
+7.0 & 3.\,\allowbreak 48 & 2.\,\allowbreak 509 \\ 
+3.\,\allowbreak 48 & 2.\,\allowbreak 509 & 2.\,\allowbreak 024\,3 \\ 
+2.\,\allowbreak 509 & 2.\,\allowbreak 024\,3 & 1.\,\allowbreak 739\,3%
+\end{array}%
+\right] \allowbreak $
+
+$\allowbreak $
+
+$D=\left[ 
+\begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+0 & 0.16 & 0.33 & 0.5 & 0.66 & 0.83 & 1 \\ 
+0 & 0.025\,6 & 0.108\,9 & 0.25 & 0.435\,6 & 0.688\,9 & 1%
+\end{array}%
+\right] \left[ 
+\begin{array}{c}
+1.2 \\ 
+1.25 \\ 
+1.29 \\ 
+1.31 \\ 
+1.33 \\ 
+1.33 \\ 
+1.31%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+9.\,\allowbreak 02 \\ 
+4.\,\allowbreak 572\,4 \\ 
+3.\,\allowbreak 305\,6%
+\end{array}%
+\right] $
+
+$R=\left[ 
+\begin{array}{ccc}
+7.0 & 3.\,\allowbreak 48 & 2.\,\allowbreak 509 \\ 
+3.\,\allowbreak 48 & 2.\,\allowbreak 509 & 2.\,\allowbreak 024\,3 \\ 
+2.\,\allowbreak 509 & 2.\,\allowbreak 024\,3 & 1.\,\allowbreak 739\,3%
+\end{array}%
+\right] ^{-1}\left[ 
+\begin{array}{c}
+9.\,\allowbreak 02 \\ 
+4.\,\allowbreak 572\,4 \\ 
+3.\,\allowbreak 305\,6%
+\end{array}%
+\right] =\allowbreak \left[ 
+\begin{array}{c}
+1.\,\allowbreak 199\,8 \\ 
+0.349\,10 \\ 
+-0.236\,51%
+\end{array}%
+\right] \allowbreak $
+
+\bigskip
+
+\bigskip
+
+\[
+f(x)=1.1998+0.34910x-0.23651x^{2}
+\]
+
+\end{document}
